@@ -1,0 +1,29 @@
+Reportes:
+https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm
+historico:
+https://www.cftc.gov/files/dea/history/fut_disagg_txt_2021.zip
+Fechas update:
+https://www.cftc.gov/MarketReports/CommitmentsofTraders/ReleaseSchedule/index.htm
+Pagina que hace lo que nosotros:
+https://www.tradingster.com/cot/futures/fin/090741
+Pagina de pago:
+https://cotbase.com/
+Charts de bloomberg (con dato historico):
+https://media.discordapp.net/attachments/711624744012611624/940875778822897674/Schermata_2022-02-09_alle_08.44.04.png?width=1056&height=630
+
+React charts:
+https://react-charts.tanstack.com/examples/simple
+
+NPM Charts:
+https://www.npmjs.com/package/react-google-charts
+
+https://www.npmjs.com/package/react-apexcharts
+
+https://www.npmjs.com/package/echarts-for-react
+
+https://www.npmjs.com/package/recharts
+------------------------
+https://recharts.org/en-US/examples
+
+
+apache charts
