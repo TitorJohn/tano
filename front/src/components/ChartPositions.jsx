@@ -10,7 +10,7 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import { Bar, Line } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import currencies from '../../../2022-05-10.json'
 
 ChartJS.register(
@@ -24,16 +24,6 @@ ChartJS.register(
   Legend,
 );
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
-
 export const options = {
   responsive: true,
   plugins: {
@@ -42,49 +32,38 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'Chart.js Bar Chart',
+      text: 'GENERAL EXPOSITIONS',
     },
-  },
-  scales: {
-    x: {
-      stacked: true,
-    }
   }
 };
 
-const labels = currencies[0].metrics.map(metric => metric.name);
-
+const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];
 
 export const data = {
   labels,
   datasets: [
     {
-      label: 'long',
+      label: 'MANAGER',
       data: currencies[0].metrics.map(metric => metric.long.positions),
       backgroundColor: 'rgba(255, 99, 132, 0.5)',
     },
     {
-      label: 'short',
+      label: 'MANAGER',
       data: currencies[0].metrics.map(metric => metric.short.positions),
       backgroundColor: 'rgba(53, 162, 235, 0.5)',
     },
     {
-      label: 'spreading',
-      data: currencies[0].metrics.map(metric => metric.spreading.positions),
-      backgroundColor: 'rgba(53, 0, 235, 0.5)',
-    },
+      label: 'NON-COMERCIAL',
+      data: currencies[0].metrics.map(metric => metric.short.positions),
+      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+    }
   ],
 };
 
 export function ChartPositions() {
-  const [toggle, setToggle] = useState(true)
   return (
     <>
-      <button onClick={() => setToggle(!toggle)}>Change graph</button>
-      {toggle ?
-        <Bar options={options} data={data} /> :
-        <Line options={options} data={data} />
-      }
+      <Bar options={options} data={data} />
     </>
   )
 };
