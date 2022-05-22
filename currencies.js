@@ -1,16 +1,59 @@
 const fs = require("fs");
+const axios = require('axios');
+const unzipper = require("unzipper");
 
-const getCurrencies = (date) => {
-    const data = fs.readFileSync(`./files/${date}.txt`, "utf8");
-    const rows = data.split("\n");
-    rows.pop();
-    const currecies = [];
-    for (const row of rows) {
-        const c = parseCurrency(row);
-        currecies.push(c);
+const getCurrencies = async (date) => {
+    try{
+        const data = fs.readFileSync(`./files/${date}.txt`, "utf8");
+        const rows = data.split("\n");
+        rows.pop();
+        const currecies = [];
+        for (const row of rows) {
+            const c = parseCurrency(row);
+            currecies.push(c);
+        }
+        return currecies;
+    } catch (e){
+        console.log("error ", e);
+        console.log("fetching file for: ",date);
+        await axios({
+            method: 'get',
+            url: "https://www.cftc.gov/files/dea/history/com_fin_txt_"+date+".zip",
+            responseType: 'stream'
+            })
+        .then(res => {
+            return new Promise((resolve,reject) =>{
+                res.data.pipe(unzipper.Parse())
+                .on("entry", (entry) => {
+                    console.log(entry.path);
+                    entry.pipe(
+                        fs.createWriteStream('./files/'+date+".txt")
+                        )
+                        .on("error", reject);
+                })
+                .on("error", reject)
+                .on("finish", resolve);
+                
+            })
+        })
+        .then(console.log)
+        .catch(console.error)
+        await getCurrencies(date);
     }
-    return currecies;
 };
+/*
+const downloadFile = (async (url, path) => {
+    const res = await fetch(url);
+    const fileStream = fs.createWriteStream(path);
+    await new Promise((resolve, reject) => {
+    res.body.pipe(fileStream);
+    res.body.on("error", reject);
+    fileStream.on("finish", resolve);
+    });
+});
+fs.createReadStream('path/to/archive.zip')
+  .pipe(unzipper.Extract({ path: 'output/path' }));
+*/
 
 const parseCurrency = (row) => {
     const currency = {
