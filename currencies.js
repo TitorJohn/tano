@@ -1,18 +1,5 @@
 const fs = require("fs");
 
-// TODO: tabla de Asset Manager y Leveraged funds, Non-comercial de cada moneda (tradingster)
-// Grafico de cada moneda con los 3 titulos ( Asset Manager, Leveraged, Non-comercial), la tabla al lado del grafico
-// long: compra, short: venta, mostrar ambas barras
-// para non-comercial sumar las otros titulos
-// Grafico de barra de cada moneda, historicamente (3 meses atras)
-// Primera carga: https://www.cftc.gov/MarketReports/CommitmentsofTraders/HistoricalViewable/index.htm, base de datos
-// Carga por semana: https://www.cftc.gov/dea/newcot/FinFutWk.txt cambia todas las semanas (viernes GMT 0 19:30)
-// nombres de cada moneda: borrar el CHICAGO MERCANTILE EXCHANGE
-// lista de monedas: australian, british pound, canadian, euro, japanese yen, swiss franc, USD index, new zealand
-// stock indexes, treasures y plata para despues
-// informacion del ORO:https://www.cftc.gov/dea/futures/other_sf.htm
-// para los colores, color-picker
-
 const getCurrencies = (date) => {
     const data = fs.readFileSync(`./files/${date}.txt`, "utf8");
     const rows = data.split("\n");
