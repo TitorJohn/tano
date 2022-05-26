@@ -25,7 +25,6 @@ ChartJS.register(
 );
 
 export const options = {
-  responsive: true,
   plugins: {
     legend: {
       position: 'top',
@@ -34,7 +33,9 @@ export const options = {
       display: true,
       text: 'GENERAL EXPOSITIONS',
     },
-  }
+  },
+  responsive: true,
+  maintainAspectRatio: false,
 };
 
 const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];
