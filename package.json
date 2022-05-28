@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
     "email-templates": "^9.0.0",
-    "nodemailer": "^6.7.2"
+    "node-fetch": "^3.2.4",
+    "nodemailer": "^6.7.2",
+    "unzipper": "^0.10.11"
   }
 }
