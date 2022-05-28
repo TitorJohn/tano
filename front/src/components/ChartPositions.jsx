@@ -24,7 +24,33 @@ ChartJS.register(
   Legend,
 );
 
-export const options = {
+const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];
+
+let currencyIndex;
+let labelIndex;
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: 'MANAGER',
+      data: currencies[0].metrics.map(metric => metric.long.positions),
+      backgroundColor: '',
+    },
+    {
+      label: 'MANAGER',
+      data: currencies[0].metrics.map(metric => metric.short.positions),
+      backgroundColor: '',
+    },
+    {
+      label: 'NON-COMERCIAL',
+      data: currencies[0].metrics.map(metric => metric.short.positions),
+      backgroundColor: '',
+    }
+  ],
+};
+
+export function ChartPositions(props) {
+  const options = {
   plugins: {
     legend: {
       position: 'top',
@@ -34,34 +60,30 @@ export const options = {
       text: 'GENERAL EXPOSITIONS',
     },
   },
+  onClick : (event, clickedElements) => barClickHandler(event, clickedElements),
   responsive: true,
   maintainAspectRatio: false,
-};
+  };
 
-const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];
+  function barClickHandler(event, clickedElements){
+    if (clickedElements.length === 0) return
 
-export const data = {
-  labels,
-  datasets: [
-    {
-      label: 'MANAGER',
-      data: currencies[0].metrics.map(metric => metric.long.positions),
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
-    },
-    {
-      label: 'MANAGER',
-      data: currencies[0].metrics.map(metric => metric.short.positions),
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
-    },
-    {
-      label: 'NON-COMERCIAL',
-      data: currencies[0].metrics.map(metric => metric.short.positions),
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
-    }
-  ],
-};
+      const currencyIndex  = clickedElements[0].index;
+      const labelIndex = clickedElements[0].datasetIndex;
+      //index is the data.labels ; datasetindex is the data.datasets.label
+      console.log("index: ",currencyIndex,"dataset index: ",labelIndex);
+      console.log(data.labels[currencyIndex], " : ", data.datasets[labelIndex].label);
 
-export function ChartPositions() {
+      props.setCurrencyIndex(currencyIndex);
+      props.setLabelIndex(labelIndex);
+  }
+
+  //data.datasets[0].backgroundColor = props?.testdata;
+  for(let i = 0; i < data.datasets.length; i++){
+    data.datasets[i].backgroundColor = props.bgColors[i];
+    console.log(data.datasets[i].backgroundColor);
+    //data.datasets[0].backgroundColor = "rgba(203, 6, 247, 0.5)";
+  };
   return (
     <>
       <Bar options={options} data={data} />

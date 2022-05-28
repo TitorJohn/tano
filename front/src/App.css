@@ -49,3 +49,14 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+.dayTheme{
+  background-color:white;
+  color: black;
+}
+.nightTheme{
+  background-color: #282c34;
+  color: white;
+}
+.displayNone{
+  display: none;
+}
