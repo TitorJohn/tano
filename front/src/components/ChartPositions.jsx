@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -49,7 +49,14 @@ export const data = {
   ],
 };
 
+
 export function ChartPositions(props) {
+  const [value, setValue] = useState(props.propName);
+
+  useEffect(() => { 
+    setValue(props.propName)
+    console.log("name: ",value);
+  }, [props.propName]);
   const options = {
   plugins: {
     legend: {
@@ -64,6 +71,8 @@ export function ChartPositions(props) {
   responsive: true,
   maintainAspectRatio: false,
   };
+
+  
 
   function barClickHandler(event, clickedElements){
     if (clickedElements.length === 0) return
@@ -84,6 +93,7 @@ export function ChartPositions(props) {
     console.log(data.datasets[i].backgroundColor);
     //data.datasets[0].backgroundColor = "rgba(203, 6, 247, 0.5)";
   };
+
   return (
     <>
       <Bar options={options} data={data} />

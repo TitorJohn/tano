@@ -60,7 +60,7 @@ function App() {
           <button onClick={() => {console.log(bgColors)}}>test</button>
         </div>
         <div className="chart">
-          <ChartPositions bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
+          <ChartPositions bgColors={bgColors} propName={bgColors.toString()} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
         </div>
       </div>
     </div>
