@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,6 +13,7 @@ import {
 import { Bar } from 'react-chartjs-2';
 import currencies from '../../../2022-05-10.json'
 
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -26,8 +27,7 @@ ChartJS.register(
 
 const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];
 
-let currencyIndex;
-let labelIndex;
+
 export const data = {
   labels,
   datasets: [
@@ -51,12 +51,6 @@ export const data = {
 
 
 export function ChartPositions(props) {
-  const [value, setValue] = useState(props.propName);
-
-  useEffect(() => { 
-    setValue(props.propName)
-    console.log("name: ",value);
-  }, [props.propName]);
   const options = {
   plugins: {
     legend: {
@@ -72,16 +66,12 @@ export function ChartPositions(props) {
   maintainAspectRatio: false,
   };
 
-  
 
   function barClickHandler(event, clickedElements){
     if (clickedElements.length === 0) return
 
       const currencyIndex  = clickedElements[0].index;
       const labelIndex = clickedElements[0].datasetIndex;
-      //index is the data.labels ; datasetindex is the data.datasets.label
-      console.log("index: ",currencyIndex,"dataset index: ",labelIndex);
-      console.log(data.labels[currencyIndex], " : ", data.datasets[labelIndex].label);
 
       props.setCurrencyIndex(currencyIndex);
       props.setLabelIndex(labelIndex);
@@ -90,10 +80,8 @@ export function ChartPositions(props) {
   //data.datasets[0].backgroundColor = props?.testdata;
   for(let i = 0; i < data.datasets.length; i++){
     data.datasets[i].backgroundColor = props.bgColors[i];
-    console.log(data.datasets[i].backgroundColor);
-    //data.datasets[0].backgroundColor = "rgba(203, 6, 247, 0.5)";
-  };
 
+  };
   return (
     <>
       <Bar options={options} data={data} />
