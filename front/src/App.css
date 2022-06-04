@@ -53,7 +53,7 @@ button {
   background-color:white;
   color: black;
 }
-.nightTheme{
+.nightTheme *{
   background-color: #282c34;
   color: white;
 }
