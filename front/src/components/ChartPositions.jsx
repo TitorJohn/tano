@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,6 +13,7 @@ import {
 import { Bar } from 'react-chartjs-2';
 import currencies from '../../../2022-05-10.json'
 
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -24,8 +25,33 @@ ChartJS.register(
   Legend,
 );
 
-export const options = {
-  responsive: true,
+const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];
+
+
+export const data = {
+  labels,
+  datasets: [
+    {
+      label: 'MANAGER',
+      data: currencies[0].metrics.map(metric => metric.long.positions),
+      backgroundColor: '',
+    },
+    {
+      label: 'MANAGER',
+      data: currencies[0].metrics.map(metric => metric.short.positions),
+      backgroundColor: '',
+    },
+    {
+      label: 'NON-COMERCIAL',
+      data: currencies[0].metrics.map(metric => metric.short.positions),
+      backgroundColor: '',
+    }
+  ],
+};
+
+
+export function ChartPositions(props) {
+  const options = {
   plugins: {
     legend: {
       position: 'top',
@@ -34,33 +60,28 @@ export const options = {
       display: true,
       text: 'GENERAL EXPOSITIONS',
     },
+  },
+  onClick : (event, clickedElements) => barClickHandler(event, clickedElements),
+  responsive: true,
+  maintainAspectRatio: false,
+  };
+
+
+  function barClickHandler(event, clickedElements){
+    if (clickedElements.length === 0) return
+
+      const currencyIndex  = clickedElements[0].index;
+      const labelIndex = clickedElements[0].datasetIndex;
+
+      props.setCurrencyIndex(currencyIndex);
+      props.setLabelIndex(labelIndex);
   }
-};
 
-const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];
+  //data.datasets[0].backgroundColor = props?.testdata;
+  for(let i = 0; i < data.datasets.length; i++){
+    data.datasets[i].backgroundColor = props.bgColors[i];
 
-export const data = {
-  labels,
-  datasets: [
-    {
-      label: 'MANAGER',
-      data: currencies[0].metrics.map(metric => metric.long.positions),
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
-    },
-    {
-      label: 'MANAGER',
-      data: currencies[0].metrics.map(metric => metric.short.positions),
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
-    },
-    {
-      label: 'NON-COMERCIAL',
-      data: currencies[0].metrics.map(metric => metric.short.positions),
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
-    }
-  ],
-};
-
-export function ChartPositions() {
+  };
   return (
     <>
       <Bar options={options} data={data} />

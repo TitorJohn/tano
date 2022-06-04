@@ -27,7 +27,16 @@
 .App-link {
   color: #61dafb;
 }
-
+.grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100vh;
+  width: 100vw;
+}
+.chart{
+  height: 100%;
+  width: 100%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,4 +48,15 @@
 
 button {
   font-size: calc(10px + 2vmin);
+}
+.dayTheme{
+  background-color:white;
+  color: black;
+}
+.nightTheme *{
+  background-color: #282c34;
+  color: white;
+}
+.displayNone{
+  display: none;
 }
