@@ -11,7 +11,8 @@ import {
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import currencies from '../../../2022-05-10.json'
+import currencies from '../../../files/2022-05-10.json'
+import { TradingsterTable } from './TradingsterTable';
 
 
 ChartJS.register(
@@ -25,25 +26,34 @@ ChartJS.register(
   Legend,
 );
 
-const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];
+//const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];  
+const labels = ["long", "short"]
 
+const assetManager = currencies[0].metrics[1]
+const leveragedFunds = currencies[0].metrics[2]
 
+const assetManagerData = [assetManager.long.positions, assetManager.short.positions]
+const leveragedFundsData = [leveragedFunds.long.positions, leveragedFunds.short.positions]
+const nonComercialData = [
+  assetManager.long.positions + leveragedFunds.long.positions,
+  assetManager.short.positions + leveragedFunds.short.positions
+]
 export const data = {
   labels,
   datasets: [
     {
-      label: 'MANAGER',
-      data: currencies[0].metrics.map(metric => metric.long.positions),
+      label: 'Asset Manager',
+      data: assetManagerData,
       backgroundColor: '',
     },
     {
-      label: 'MANAGER',
-      data: currencies[0].metrics.map(metric => metric.short.positions),
+      label: 'Leveraged Funds',
+      data: leveragedFundsData,
       backgroundColor: '',
     },
     {
-      label: 'NON-COMERCIAL',
-      data: currencies[0].metrics.map(metric => metric.short.positions),
+      label: 'Non-ComerciaL',
+      data: nonComercialData,
       backgroundColor: '',
     }
   ],
@@ -52,39 +62,44 @@ export const data = {
 
 export function ChartPositions(props) {
   const options = {
-  plugins: {
-    legend: {
-      position: 'top',
+    plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'GENERAL EXPOSITIONS',
+      },
     },
-    title: {
-      display: true,
-      text: 'GENERAL EXPOSITIONS',
-    },
-  },
-  onClick : (event, clickedElements) => barClickHandler(event, clickedElements),
-  responsive: true,
-  maintainAspectRatio: false,
+    onClick: (event, clickedElements) => barClickHandler(event, clickedElements),
+    responsive: true,
+    maintainAspectRatio: false,
   };
 
 
-  function barClickHandler(event, clickedElements){
+  function barClickHandler(event, clickedElements) {
     if (clickedElements.length === 0) return
 
-      const currencyIndex  = clickedElements[0].index;
-      const labelIndex = clickedElements[0].datasetIndex;
+    const currencyIndex = clickedElements[0].index;
+    const labelIndex = clickedElements[0].datasetIndex;
 
-      props.setCurrencyIndex(currencyIndex);
-      props.setLabelIndex(labelIndex);
+    props.setCurrencyIndex(currencyIndex);
+    props.setLabelIndex(labelIndex);
   }
 
   //data.datasets[0].backgroundColor = props?.testdata;
-  for(let i = 0; i < data.datasets.length; i++){
+  for (let i = 0; i < data.datasets.length; i++) {
     data.datasets[i].backgroundColor = props.bgColors[i];
-
   };
-  return (
+
+  return (  
     <>
-      <Bar options={options} data={data} />
+      <div style={{height: "30%"}}>
+        <TradingsterTable currency={currencies[0]} />
+      </div>
+      <div style={{height: "70%"}}>
+        <Bar options={options} data={data} />
+      </div>
     </>
   )
 };

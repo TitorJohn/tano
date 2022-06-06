@@ -4,7 +4,7 @@ const unzipper = require("unzipper");
 
 const getCurrencies = async (date) => {
     try{
-        const data = fs.readFileSync(`./files/${date}.txt`, "utf8");
+        const data = fs.readFileSync(__dirname + `/../files/${date}.txt`, "utf8");
         const rows = data.split("\n");
         rows.pop();
         const currecies = [];
@@ -14,6 +14,7 @@ const getCurrencies = async (date) => {
         }
         return currecies;
     } catch (e){
+        /*
         console.log("error ", e);
         console.log("fetching file for: ",date);
         await axios({
@@ -27,7 +28,7 @@ const getCurrencies = async (date) => {
                 .on("entry", (entry) => {
                     console.log(entry.path);
                     entry.pipe(
-                        fs.createWriteStream('./files/'+date+".txt")
+                        fs.createWriteStream('../files/'+date+".txt")
                         )
                         .on("error", reject);
                 })
@@ -39,6 +40,7 @@ const getCurrencies = async (date) => {
         .then(console.log)
         .catch(console.error)
         await getCurrencies(date);
+        */
     }
 };
 /*

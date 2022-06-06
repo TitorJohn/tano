@@ -59,7 +59,7 @@ const App = () => {
               </>
             }
           </div>
-          <div className="chart">
+          <div>
             <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
           </div>
         </div>
