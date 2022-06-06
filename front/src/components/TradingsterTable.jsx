@@ -25,7 +25,7 @@ export const TradingsterTable = ({currency}) => {
         }
 
         setData(data)
-    }, [])
+    }, [currency.name])
 
     return data && (
         <table className="table table-striped">

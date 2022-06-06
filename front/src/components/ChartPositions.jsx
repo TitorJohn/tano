@@ -13,6 +13,9 @@ import {
 import { Bar } from 'react-chartjs-2';
 import currencies from '../../../files/2022-05-10.json'
 import { TradingsterTable } from './TradingsterTable';
+import { useState } from 'react';
+import { CURRENCIES } from '../CURRENCIES';
+
 
 
 ChartJS.register(
@@ -31,6 +34,7 @@ const labels = ["long", "short"]
 
 const assetManager = currencies[0].metrics[1]
 const leveragedFunds = currencies[0].metrics[2]
+console.log(currencies);
 
 const assetManagerData = [assetManager.long.positions, assetManager.short.positions]
 const leveragedFundsData = [leveragedFunds.long.positions, leveragedFunds.short.positions]
@@ -61,6 +65,8 @@ export const data = {
 
 
 export function ChartPositions(props) {
+  const [currency, setcurrency] = useState(currencies[0]);
+
   const options = {
     plugins: {
       legend: {
@@ -92,12 +98,29 @@ export function ChartPositions(props) {
     data.datasets[i].backgroundColor = props.bgColors[i];
   };
 
+  function handleDropDownChange(event){
+    const selectedCurrency = event.target.value;
+    const trueCurrency = currencies.find( (curren,index) => {
+      return curren.name.toLowerCase().includes(selectedCurrency);
+    });
+    setcurrency(trueCurrency);
+  }
+
   return (  
     <>
-      <div style={{height: "30%"}}>
-        <TradingsterTable currency={currencies[0]} />
+      <div style={{height: "10%"}}>
+        <select name="cars" id="cars" onChange={handleDropDownChange}>
+          {CURRENCIES.map ((data,index) => {
+            return(
+              <option key={index} value={data}>{data}</option>
+            );
+          })}
+        </select>
       </div>
-      <div style={{height: "70%"}}>
+      <div style={{height: "25%"}}>
+        <TradingsterTable currency={currency} />
+      </div>
+      <div style={{height: "65%"}}>
         <Bar options={options} data={data} />
       </div>
     </>
