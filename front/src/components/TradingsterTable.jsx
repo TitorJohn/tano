@@ -25,15 +25,15 @@ export const TradingsterTable = ({currency}) => {
         }
 
         setData(data)
-    }, [data])
+    }, [])
 
     return data && (
-        <table class="table table-striped">
+        <table className="table table-striped">
             <thead>
                 <tr>
                     <th>&nbsp;</th>
-                    <th colspan="3" >Long</th>
-                    <th colspan="3" >Short</th>
+                    <th colSpan="3" >Long</th>
+                    <th colSpan="3" >Short</th>
                 </tr>
                 <tr>
                     <th></th>
@@ -50,29 +50,29 @@ export const TradingsterTable = ({currency}) => {
             <tbody>
                 <tr>
                     <td><strong>Asset Manager/<br/>Institutional</strong></td>
-                    {data.assetManager.long.map((value) => {
-                        return <td>{value}</td>
+                    {data.assetManager.long.map((value,index) => {
+                        return <td key={index}>{value}</td>
                     })}
-                    {data.assetManager.short.map((value) => {
-                        return <td>{value}</td> 
+                    {data.assetManager.short.map((value,index) => {
+                        return <td key={index}>{value}</td> 
                     })}
                 </tr>
                 <tr>
                     <td><strong>Leveraged<br/>Funds</strong></td>
-                    {data.leveragedFunds.long.map((value) => {
-                        return <td>{value}</td>
+                    {data.leveragedFunds.long.map((value,index) => {
+                        return <td key={index}>{value}</td>
                     })}
-                    {data.leveragedFunds.short.map((value) => {
-                        return <td>{value}</td> 
+                    {data.leveragedFunds.short.map((value,index) => {
+                        return <td key={index}>{value}</td> 
                     })}
                 </tr>
                 <tr>
                     <td><strong>Non<br/>Comercial</strong></td>
-                    {data.nonComercial.long.map((value) => {
-                        return <td>{value}</td>
+                    {data.nonComercial.long.map((value,index) => {
+                        return <td key={index}>{value}</td>
                     })}
-                    {data.nonComercial.short.map((value) => {
-                        return <td>{value}</td> 
+                    {data.nonComercial.short.map((value,index) => {
+                        return <td key={index}>{value}</td> 
                     })}
                 </tr>
             </tbody>

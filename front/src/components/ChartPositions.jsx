@@ -90,7 +90,6 @@ export function ChartPositions(props) {
   //data.datasets[0].backgroundColor = props?.testdata;
   for (let i = 0; i < data.datasets.length; i++) {
     data.datasets[i].backgroundColor = props.bgColors[i];
-
   };
 
   return (  
