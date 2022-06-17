@@ -1,6 +1,8 @@
 import './App.css'
 import { ChartPositions } from './components/ChartPositions'
+import { TradingsterTable } from './components/TradingsterTable';
 import { ColorPicker, useColor } from "react-color-palette";
+import currencies from '../../files/2022-05-10.json'
 import "react-color-palette/lib/css/styles.css";
 import { useState } from 'react';
 
@@ -18,6 +20,7 @@ const Layout = ({ nightMode, children }) => {
 
 const App = () => {
   const [color, setColor] = useColor("hex", "#121212");
+  const [currency, setcurrency] = useState(currencies[0]);
   const [currencyIndex, setCurrencyIndex] = useState(undefined);
   const [theme, setTheme] = useState(false)
   const [labelIndex, setLabelIndex] = useState(undefined);
@@ -50,13 +53,15 @@ const App = () => {
           <div>
             <button onClick={() => switchTheme(theme)} >{theme ? "Night Mode" : "Day Mode"}</button>
             {
-              labelIndex !== undefined
-              &&
+              (labelIndex !== undefined )?
               <>
+                
                 <h1 className='gridChild'>Color Picker</h1>
                 <ColorPicker width={456} height={228} color={color} onChange={setColor} hideHSV alpha={true} dark />
                 <button onClick={saveColor}>save</button>
               </>
+              :
+              <TradingsterTable currency={currency} />
             }
           </div>
           <div>

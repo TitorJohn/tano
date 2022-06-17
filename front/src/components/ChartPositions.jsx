@@ -12,7 +12,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import currencies from '../../../files/2022-05-10.json'
-import { TradingsterTable } from './TradingsterTable';
+
 import { useState } from 'react';
 import { CURRENCIES } from '../CURRENCIES';
 
@@ -108,7 +108,7 @@ export function ChartPositions(props) {
 
   return (  
     <>
-      <div style={{height: "10%"}}>
+      <div style={{height: "5%"}}>
         <select name="cars" id="cars" onChange={handleDropDownChange}>
           {CURRENCIES.map ((data,index) => {
             return(
@@ -117,10 +117,8 @@ export function ChartPositions(props) {
           })}
         </select>
       </div>
-      <div style={{height: "25%"}}>
-        <TradingsterTable currency={currency} />
-      </div>
-      <div style={{height: "65%"}}>
+
+      <div style={{height: "95%"}}>
         <Bar options={options} data={data} />
       </div>
     </>

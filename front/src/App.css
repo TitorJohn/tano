@@ -60,3 +60,7 @@ button {
 .displayNone{
   display: none;
 }
+.tableDivision{
+  border-right: 2px black solid;
+  padding-right: 7px;
+}
