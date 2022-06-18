@@ -47,25 +47,34 @@ const App = () => {
   }
 
   return (
-    <Layout nightMode={theme} >
+    <Layout nightMode={theme} style={{}}>
       <div className="App">
+        <div id='leftSide'>
+          <button onClick={() => switchTheme(theme)} >{theme ? "Night Mode" : "Day Mode"}</button>
+          {
+            (labelIndex !== undefined )?
+            <>
+              
+              <h1 className='gridChild'>Color Picker</h1>
+              <ColorPicker width={456} height={228} color={color} onChange={setColor} hideHSV alpha={true} dark />
+              <button onClick={saveColor}>save</button>
+            </>
+            :
+            <TradingsterTable currency={currency} />
+          }
+        </div>
         <div className='grid'>
-          <div>
-            <button onClick={() => switchTheme(theme)} >{theme ? "Night Mode" : "Day Mode"}</button>
-            {
-              (labelIndex !== undefined )?
-              <>
-                
-                <h1 className='gridChild'>Color Picker</h1>
-                <ColorPicker width={456} height={228} color={color} onChange={setColor} hideHSV alpha={true} dark />
-                <button onClick={saveColor}>save</button>
-              </>
-              :
-              <TradingsterTable currency={currency} />
-            }
-          </div>
-          <div>
-            <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
+          <div></div>
+          <div id='rightSide'>
+            <div id='barChart' style={{height:"100vh"}}>
+              <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
+            </div>
+            <div id='barChart' style={{height:"100vh"}}>
+              <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
+            </div>
+            <div id='barChart' style={{height:"100vh"}}>
+              <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
+            </div>
           </div>
         </div>
       </div>

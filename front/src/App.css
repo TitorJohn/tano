@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -63,4 +64,7 @@ button {
 .tableDivision{
   border-right: 2px black solid;
   padding-right: 7px;
+}
+#leftSide{
+  position: fixed;
 }
