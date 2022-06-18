@@ -1,3 +1,6 @@
+body{
+  overflow-y: hidden;
+}
 .App {
   text-align: center;
   overflow-x: hidden;
@@ -67,4 +70,14 @@ button {
 }
 #leftSide{
   position: fixed;
+}
+#navbar{
+  
+  padding-top: 0.5%;
+  display: flex;
+  justify-content: center;
+  border: 2px gray solid;
+}
+#navbar span{
+  margin-left: 10px;
 }

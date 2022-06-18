@@ -18,6 +18,25 @@ const Layout = ({ nightMode, children }) => {
   )
 }
 
+const Navbar = ({theme, setTheme}) => {
+  const switchTheme = (theme) => {
+    setTheme(!theme)
+  }
+  return (
+    <div id="navbar" >
+      <span>
+        <h1 style={{margin:"0px"}}>hi</h1>
+      </span>
+      <span>
+        <button onClick={() => switchTheme(theme)} >{theme ? "Night Mode" : "Day Mode"}</button>
+      </span>
+      <span>
+        dropdown
+      </span>
+    </div>
+  )
+}
+
 const App = () => {
   const [color, setColor] = useColor("hex", "#121212");
   const [currency, setcurrency] = useState(currencies[0]);
@@ -42,15 +61,14 @@ const App = () => {
     setLabelIndex(undefined);
   }
 
-  const switchTheme = (theme) => {
-    setTheme(!theme)
-  }
+
 
   return (
-    <Layout nightMode={theme} style={{}}>
+    <Layout nightMode={theme} >
+      <Navbar theme={theme} setTheme={setTheme} />
       <div className="App">
         <div id='leftSide'>
-          <button onClick={() => switchTheme(theme)} >{theme ? "Night Mode" : "Day Mode"}</button>
+          
           {
             (labelIndex !== undefined )?
             <>
@@ -66,7 +84,7 @@ const App = () => {
         <div className='grid'>
           <div></div>
           <div id='rightSide'>
-            <div id='barChart' style={{height:"100vh"}}>
+            <div id='barChart' style={{height:"95vh"}}>
               <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
             </div>
             <div id='barChart' style={{height:"100vh"}}>
