@@ -115,8 +115,11 @@ export function ChartPositions(props) {
           })}
         </select>
       </div>
+      <div style={{height: "25%"}}>
+        <TradingsterTable currency={currency} />
+      </div>
       <div style={{height: "65%"}}>
-        <Bar options={options} data={data}/>
+        <Bar options={options} data={data} />
       </div>
     </>
   )

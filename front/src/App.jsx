@@ -3,6 +3,8 @@ import { ChartPositions } from './components/ChartPositions'
 import { ColorPicker, useColor } from "react-color-palette";
 import "react-color-palette/lib/css/styles.css";
 import { useState } from 'react';
+import { TradingsterTable } from './components/TradingsterTable';
+import currencies from '../../files/2022-05-10.json'
 
 const Layout = ({ nightMode, children }) => {
   return nightMode ? (
@@ -22,6 +24,7 @@ const App = () => {
   const [theme, setTheme] = useState(false)
   const [labelIndex, setLabelIndex] = useState(undefined);
   const [bgColors, setBgColors] = useState(["rgba(53, 162, 235, 0.5)", 'rgba(53, 162, 235, 0.5)', 'rgba(53, 162, 235, 0.5)']);
+  const [currency, setcurrency] = useState(currencies[0]);
 
   const saveColor = () => {
     let temporal = [...bgColors];
@@ -50,13 +53,13 @@ const App = () => {
           <div>
             <button onClick={() => switchTheme(theme)} >{theme ? "Night Mode" : "Day Mode"}</button>
             {
-              labelIndex !== undefined
-              &&
+              labelIndex !== undefined ? (
               <>
                 <h1 className='gridChild'>Color Picker</h1>
                 <ColorPicker width={456} height={228} color={color} onChange={setColor} hideHSV alpha={true} dark />
                 <button onClick={saveColor}>save</button>
-              </>
+                              </>
+              ) : <TradingsterTable currency={currency} />
             }
           </div>
           <div>
