@@ -11,12 +11,9 @@ import {
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import currencies from "../../../files/2022-05-10.json";
 
 import { useState } from 'react';
-import { CURRENCIES } from '../CURRENCIES';
-import { getChartData } from '../getChartData';
-const data = getChartData();
+import { useEffect } from 'react';
 
 ChartJS.register(
   CategoryScale,
@@ -29,9 +26,58 @@ ChartJS.register(
   Legend,
 );
 
+//const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];  
+
+
+const getData = (currency) => {
+  const labels = ["long", "short"]
+
+  const assetManager = currency.metrics[1]
+  const leveragedFunds = currency.metrics[2]
+
+  const assetManagerData = [assetManager.long.positions, assetManager.short.positions]
+  const leveragedFundsData = [leveragedFunds.long.positions, leveragedFunds.short.positions]
+  const nonComercialData = [
+    assetManager.long.positions + leveragedFunds.long.positions,
+    assetManager.short.positions + leveragedFunds.short.positions
+  ]
+  return {
+    labels,
+    datasets: [
+      {
+        label: 'Asset Manager',
+        data: assetManagerData,
+        backgroundColor: '',
+      },
+      {
+        label: 'Leveraged Funds',
+        data: leveragedFundsData,
+        backgroundColor: '',
+      },
+      {
+        label: 'Non-ComerciaL',
+        data: nonComercialData,
+        backgroundColor: '',
+      }
+    ],
+  };
+}
+
+
 export function ChartPositions(props) {
-  const [currency, setcurrency] = useState(currencies[0]);
-  const [isFirstBoot, setBoot] = useState(true);
+  const [data, setData] = useState({})
+
+  useEffect(() => {
+    const firstData = getData(props.currency)
+    //data.datasets[0].backgroundColor = props?.testdata;
+
+    for (let i = 0; i < firstData.datasets.length; i++) {
+      firstData.datasets[i].backgroundColor = props.bgColors[i];
+    };
+
+    setData(firstData)
+  }, [])
+  
 
   const options = {
     plugins: {
@@ -83,19 +129,7 @@ export function ChartPositions(props) {
 
   return (  
     <>
-      <div style={{height: "5%"}}>
-        <select name="cars" id="cars" onChange={handleDropDownChange}>
-          {CURRENCIES.map ((data,index) => {
-            return(
-              <option key={index} value={data}>{data}</option>
-            );
-          })}
-        </select>
-      </div>
-
-      <div style={{height: "95%"}}>
-        <Bar options={options} data={data} />
-      </div>
+      <Bar options={options} data={data} />
     </>
-  )
+  ): 'loading';
 };
