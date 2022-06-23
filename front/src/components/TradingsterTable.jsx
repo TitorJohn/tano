@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 
+
 export const TradingsterTable = ({currency}) => {
     const [data, setData ] = useState()
 
@@ -25,7 +26,7 @@ export const TradingsterTable = ({currency}) => {
         }
 
         setData(data)
-    }, [])
+    }, [currency.name])
 
     return data && (
         <table className="table table-striped">
@@ -40,7 +41,7 @@ export const TradingsterTable = ({currency}) => {
                     <th>Positions</th>
                     <th>Open Int</th>
                     <th>Traders</th>
-                    <th>Change</th>
+                    <th className="tableDivision">Change</th>
                     <th>Positions</th>
                     <th>Open Int</th>
                     <th>Traders</th>
@@ -51,6 +52,9 @@ export const TradingsterTable = ({currency}) => {
                 <tr>
                     <td><strong>Asset Manager/<br/>Institutional</strong></td>
                     {data.assetManager.long.map((value,index) => {
+                        if(index === data.assetManager.long.length - 1){
+                            return <td key={index} className="tableDivision">{value}</td>
+                        }
                         return <td key={index}>{value}</td>
                     })}
                     {data.assetManager.short.map((value,index) => {
@@ -60,6 +64,9 @@ export const TradingsterTable = ({currency}) => {
                 <tr>
                     <td><strong>Leveraged<br/>Funds</strong></td>
                     {data.leveragedFunds.long.map((value,index) => {
+                        if(index === data.leveragedFunds.long.length - 1){
+                            return <td key={index} className="tableDivision">{value}</td>
+                        }
                         return <td key={index}>{value}</td>
                     })}
                     {data.leveragedFunds.short.map((value,index) => {
@@ -69,6 +76,9 @@ export const TradingsterTable = ({currency}) => {
                 <tr>
                     <td><strong>Non<br/>Comercial</strong></td>
                     {data.nonComercial.long.map((value,index) => {
+                        if(index === data.nonComercial.long.length - 1){
+                            return <td key={index} className="tableDivision">{value}</td>
+                        }
                         return <td key={index}>{value}</td>
                     })}
                     {data.nonComercial.short.map((value,index) => {

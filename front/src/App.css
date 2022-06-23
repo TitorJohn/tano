@@ -1,5 +1,9 @@
+body{
+  overflow-y: hidden;
+}
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -59,4 +63,21 @@ button {
 }
 .displayNone{
   display: none;
+}
+.tableDivision{
+  border-right: 2px black solid;
+  padding-right: 7px;
+}
+#leftSide{
+  position: fixed;
+}
+#navbar{
+  
+  padding-top: 0.5%;
+  display: flex;
+  justify-content: center;
+  border: 2px gray solid;
+}
+#navbar span{
+  margin-left: 10px;
 }
