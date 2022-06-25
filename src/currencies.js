@@ -3,7 +3,7 @@ const axios = require('axios');
 const unzipper = require("unzipper");
 
 const getCurrencies = async (date) => {
-    try{
+    try {
         const data = fs.readFileSync(__dirname + `/../files/${date}.txt`, "utf8");
         const rows = data.split("\n");
         rows.pop();
@@ -13,34 +13,28 @@ const getCurrencies = async (date) => {
             currecies.push(c);
         }
         return currecies;
-    } catch (e){
-        /*
+    } catch (e) {
         console.log("error ", e);
-        console.log("fetching file for: ",date);
+        console.log("fetching file for: ", date);
+        const reportYear = (new Date(data)).getFullYear()
         await axios({
             method: 'get',
-            url: "https://www.cftc.gov/files/dea/history/com_fin_txt_"+date+".zip",
+            url: "https://www.cftc.gov/files/dea/history/com_fin_txt_" + reportYear + ".zip",
             responseType: 'stream'
-            })
-        .then(res => {
-            return new Promise((resolve,reject) =>{
+        }).then(res => {
+            return new Promise((resolve, reject) => {
                 res.data.pipe(unzipper.Parse())
-                .on("entry", (entry) => {
-                    console.log(entry.path);
-                    entry.pipe(
-                        fs.createWriteStream('../files/'+date+".txt")
+                    .on("entry", (entry) => {
+                        entry.pipe(
+                            fs.createWriteStream('../files/' + reportYear + ".txt")
                         )
-                        .on("error", reject);
-                })
-                .on("error", reject)
-                .on("finish", resolve);
-                
+                            .on("error", reject);
+                    })
+                    .on("error", reject)
+                    .on("finish", resolve);
             })
-        })
-        .then(console.log)
-        .catch(console.error)
+        }).catch((e) => e.message)
         await getCurrencies(date);
-        */
     }
 };
 /*
