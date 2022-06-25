@@ -1,1295 +1,629 @@
 [
   {
     "name": "\"CANADIAN DOLLAR - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 151009,
     "totalChange": -1770,
-    "totalTraders": 112,
     "contracts": "\"(CONTRACTS OF CAD 100,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 8976,
           "openInt": 5.9,
-          "traders": 7,
           "changes": -74
         },
         "short": {
           "positions": 36760,
           "openInt": 24.3,
-          "traders": 8,
           "changes": -8839
-        },
-        "spreading": {
-          "positions": 466,
-          "openInt": 0.3,
-          "traders": 4,
-          "changes": 159
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 40164,
-          "openInt": 26.6,
-          "traders": 17,
-          "changes": 2631
-        },
-        "short": {
-          "positions": 34946,
-          "openInt": 23.1,
-          "traders": 17,
-          "changes": 1347
-        },
-        "spreading": {
-          "positions": 6101,
-          "openInt": 4,
-          "traders": 8,
-          "changes": -136
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 30879,
-          "openInt": 20.4,
-          "traders": 23,
-          "changes": -6642
+          "positions": 40164,
+          "openInt": 26.6,
+          "changes": 2631
         },
         "short": {
-          "positions": 31511,
-          "openInt": 20.9,
-          "traders": 24,
-          "changes": 2302
-        },
-        "spreading": {
-          "positions": 9905,
-          "openInt": 6.6,
-          "traders": 17,
-          "changes": 768
+          "positions": 34946,
+          "openInt": 23.1,
+          "changes": 1347
         }
       }
     ]
   },
   {
     "name": "\"SWISS FRANC - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 51282,
     "totalChange": 1897,
-    "totalTraders": 51,
     "contracts": "\"(CONTRACTS OF CHF 125,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 29942,
           "openInt": 58.4,
-          "traders": 7,
           "changes": -1292
         },
         "short": {
           "positions": 1842,
           "openInt": 3.6,
-          "traders": ".",
           "changes": 1842
-        },
-        "spreading": {
-          "positions": 34,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": 4
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 5939,
-          "openInt": 11.6,
-          "traders": 6,
-          "changes": 1225
-        },
-        "short": {
-          "positions": 13146,
-          "openInt": 25.6,
-          "traders": 13,
-          "changes": -487
-        },
-        "spreading": {
-          "positions": 1088,
-          "openInt": 2.1,
-          "traders": 4,
-          "changes": 25
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 6006,
-          "openInt": 11.7,
-          "traders": 10,
-          "changes": 1237
+          "positions": 5939,
+          "openInt": 11.6,
+          "changes": 1225
         },
         "short": {
-          "positions": 12843,
-          "openInt": 25,
-          "traders": 13,
-          "changes": 2394
-        },
-        "spreading": {
-          "positions": 2,
-          "openInt": 0,
-          "traders": ".",
-          "changes": -176
+          "positions": 13146,
+          "openInt": 25.6,
+          "changes": -487
         }
       }
     ]
   },
   {
     "name": "\"BRITISH POUND - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 264594,
     "totalChange": -3902,
-    "totalTraders": 137,
     "contracts": "\"(CONTRACTS OF GBP 62,500)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 133801,
           "openInt": 50.6,
-          "traders": 9,
           "changes": 1334
         },
         "short": {
           "positions": 29573,
           "openInt": 11.2,
-          "traders": 4,
           "changes": 157
-        },
-        "spreading": {
-          "positions": 5662,
-          "openInt": 2.1,
-          "traders": 5,
-          "changes": 1474
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 32276,
-          "openInt": 12.2,
-          "traders": 11,
-          "changes": -1634
-        },
-        "short": {
-          "positions": 128393,
-          "openInt": 48.5,
-          "traders": 41,
-          "changes": -5197
-        },
-        "spreading": {
-          "positions": 4103,
-          "openInt": 1.6,
-          "traders": 14,
-          "changes": 1602
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 57370,
-          "openInt": 21.7,
-          "traders": 18,
-          "changes": -7030
+          "positions": 32276,
+          "openInt": 12.2,
+          "changes": -1634
         },
         "short": {
-          "positions": 48177,
-          "openInt": 18.2,
-          "traders": 45,
-          "changes": -2726
-        },
-        "spreading": {
-          "positions": 6879,
-          "openInt": 2.6,
-          "traders": 14,
-          "changes": 760
+          "positions": 128393,
+          "openInt": 48.5,
+          "changes": -5197
         }
       }
     ]
   },
   {
     "name": "\"JAPANESE YEN - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 247278,
     "totalChange": -7535,
-    "totalTraders": 135,
     "contracts": "\"(CONTRACTS OF JPY 12,500,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 159366,
           "openInt": 64.4,
-          "traders": 11,
           "changes": -894
         },
         "short": {
           "positions": 6859,
           "openInt": 2.8,
-          "traders": 5,
           "changes": -1125
-        },
-        "spreading": {
-          "positions": 760,
-          "openInt": 0.3,
-          "traders": ".",
-          "changes": 262
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 41938,
-          "openInt": 17,
-          "traders": 16,
-          "changes": -1106
-        },
-        "short": {
-          "positions": 113070,
-          "openInt": 45.7,
-          "traders": 32,
-          "changes": 4543
-        },
-        "spreading": {
-          "positions": 3668,
-          "openInt": 1.5,
-          "traders": 14,
-          "changes": -2907
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 18482,
-          "openInt": 7.5,
-          "traders": 18,
-          "changes": -4541
+          "positions": 41938,
+          "openInt": 17,
+          "changes": -1106
         },
         "short": {
-          "positions": 80000,
-          "openInt": 32.4,
-          "traders": 44,
-          "changes": -9696
-        },
-        "spreading": {
-          "positions": 2688,
-          "openInt": 1.1,
-          "traders": 11,
-          "changes": 381
+          "positions": 113070,
+          "openInt": 45.7,
+          "changes": 4543
         }
       }
     ]
   },
   {
     "name": "\"EURO FX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 705046,
     "totalChange": 10120,
-    "totalTraders": 340,
     "contracts": "\"(CONTRACTS OF EUR 125,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 42305,
           "openInt": 6,
-          "traders": 19,
           "changes": -9735
         },
         "short": {
           "positions": 292660,
           "openInt": 41.5,
-          "traders": 13,
           "changes": 10988
-        },
-        "spreading": {
-          "positions": 2387,
-          "openInt": 0.3,
-          "traders": 7,
-          "changes": 598
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 396166,
-          "openInt": 56.2,
-          "traders": 105,
-          "changes": 15225
-        },
-        "short": {
-          "positions": 184759,
-          "openInt": 26.2,
-          "traders": 42,
-          "changes": -6054
-        },
-        "spreading": {
-          "positions": 30659,
-          "openInt": 4.3,
-          "traders": 47,
-          "changes": 460
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 80967,
-          "openInt": 11.5,
-          "traders": 57,
-          "changes": 4554
+          "positions": 396166,
+          "openInt": 56.2,
+          "changes": 15225
         },
         "short": {
-          "positions": 99030,
-          "openInt": 14,
-          "traders": 49,
-          "changes": 2452
-        },
-        "spreading": {
-          "positions": 18334,
-          "openInt": 2.6,
-          "traders": 31,
-          "changes": 897
+          "positions": 184759,
+          "openInt": 26.2,
+          "changes": -6054
         }
       }
     ]
   },
   {
     "name": "\"AUSTRALIAN DOLLAR - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 153209,
     "totalChange": 952,
-    "totalTraders": 95,
     "contracts": "\"(CONTRACTS OF AUD 100,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 49644,
           "openInt": 32.4,
-          "traders": 11,
           "changes": 10888
         },
         "short": {
           "positions": 2911,
           "openInt": 1.9,
-          "traders": ".",
           "changes": -3280
-        },
-        "spreading": {
-          "positions": 369,
-          "openInt": 0.2,
-          "traders": ".",
-          "changes": 314
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 44356,
-          "openInt": 29,
-          "traders": 14,
-          "changes": 3173
-        },
-        "short": {
-          "positions": 81349,
-          "openInt": 53.1,
-          "traders": 18,
-          "changes": 5105
-        },
-        "spreading": {
-          "positions": 4109,
-          "openInt": 2.7,
-          "traders": 8,
-          "changes": 894
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 30453,
-          "openInt": 19.9,
-          "traders": 19,
-          "changes": -11144
+          "positions": 44356,
+          "openInt": 29,
+          "changes": 3173
         },
         "short": {
-          "positions": 35459,
-          "openInt": 23.1,
-          "traders": 27,
-          "changes": 299
-        },
-        "spreading": {
-          "positions": 2940,
-          "openInt": 1.9,
-          "traders": 12,
-          "changes": -884
+          "positions": 81349,
+          "openInt": 53.1,
+          "changes": 5105
         }
       }
     ]
   },
   {
     "name": "\"EURO FX/BRITISH POUND XRATE - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 29857,
     "totalChange": -512,
-    "totalTraders": 36,
     "contracts": "\"(CONTRACTS OF EUR 125,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
           "changes": 0
         },
         "short": {
           "positions": 10573,
           "openInt": 35.4,
-          "traders": 5,
           "changes": 1295
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 12782,
-          "openInt": 42.8,
-          "traders": 15,
-          "changes": -254
-        },
-        "short": {
-          "positions": 1999,
-          "openInt": 6.7,
-          "traders": 5,
-          "changes": -4662
-        },
-        "spreading": {
-          "positions": 3229,
-          "openInt": 10.8,
-          "traders": 7,
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 1379,
-          "openInt": 4.6,
-          "traders": ".",
-          "changes": 466
+          "positions": 12782,
+          "openInt": 42.8,
+          "changes": -254
         },
         "short": {
-          "positions": 9398,
-          "openInt": 31.5,
-          "traders": 8,
-          "changes": 4281
-        },
-        "spreading": {
-          "positions": 49,
-          "openInt": 0.2,
-          "traders": ".",
-          "changes": -818
+          "positions": 1999,
+          "openInt": 6.7,
+          "changes": -4662
         }
       }
     ]
   },
   {
     "name": "\"EURO FX/JAPANESE YEN XRATE - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 24057,
     "totalChange": 567,
-    "totalTraders": 21,
     "contracts": "\"(CONTRACTS OF EUR 125,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 8538,
           "openInt": 35.5,
-          "traders": ".",
           "changes": 0
         },
         "short": {
           "positions": 1606,
           "openInt": 6.7,
-          "traders": ".",
           "changes": -57
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 5397,
-          "openInt": 22.4,
-          "traders": 5,
-          "changes": 312
-        },
-        "short": {
-          "positions": 9301,
-          "openInt": 38.7,
-          "traders": 9,
-          "changes": -810
-        },
-        "spreading": {
-          "positions": 1456,
-          "openInt": 6.1,
-          "traders": 5,
-          "changes": 66
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
+          "positions": 5397,
+          "openInt": 22.4,
+          "changes": 312
         },
         "short": {
-          "positions": 6227,
-          "openInt": 25.9,
-          "traders": 4,
-          "changes": 749
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
+          "positions": 9301,
+          "openInt": 38.7,
+          "changes": -810
         }
       }
     ]
   },
   {
     "name": "\"CHINESE RENMINBI-HK (CNH) - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 7284,
     "totalChange": -1132,
-    "totalTraders": 20,
     "contracts": "\"(CONTRACTS OF 100,000 USD)\"",
     "metrics": [
-      {
-        "name": "Dealer Intermediary",
-        "long": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "short": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
       {
         "name": "Asset Manager/Institutional",
         "long": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
           "changes": 0
         },
         "short": {
-          "positions": 100,
-          "openInt": 1.4,
-          "traders": ".",
-          "changes": -100
-        },
-        "spreading": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
           "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 875,
-          "openInt": 12,
-          "traders": ".",
-          "changes": -1291
+          "positions": 0,
+          "openInt": 0,
+          "changes": 0
         },
         "short": {
-          "positions": 6671,
-          "openInt": 91.6,
-          "traders": 5,
-          "changes": -832
-        },
-        "spreading": {
-          "positions": 296,
-          "openInt": 4.1,
-          "traders": ".",
-          "changes": -149
+          "positions": 100,
+          "openInt": 1.4,
+          "changes": -100
         }
       }
     ]
   },
   {
     "name": "\"MEXICAN PESO - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 153858,
     "totalChange": 1925,
-    "totalTraders": 168,
     "contracts": "\"(CONTRACTS OF MXN 500,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 825,
           "openInt": 0.5,
-          "traders": 4,
           "changes": 218
         },
         "short": {
           "positions": 82221,
           "openInt": 53.4,
-          "traders": 9,
           "changes": 1124
-        },
-        "spreading": {
-          "positions": 839,
-          "openInt": 0.5,
-          "traders": ".",
-          "changes": 157
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 78627,
-          "openInt": 51.1,
-          "traders": 25,
-          "changes": 2075
-        },
-        "short": {
-          "positions": 7610,
-          "openInt": 4.9,
-          "traders": 14,
-          "changes": 561
-        },
-        "spreading": {
-          "positions": 1493,
-          "openInt": 1,
-          "traders": 7,
-          "changes": -108
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 59624,
-          "openInt": 38.8,
-          "traders": 52,
-          "changes": -723
+          "positions": 78627,
+          "openInt": 51.1,
+          "changes": 2075
         },
         "short": {
-          "positions": 24427,
-          "openInt": 15.9,
-          "traders": 34,
-          "changes": 233
-        },
-        "spreading": {
-          "positions": 1805,
-          "openInt": 1.2,
-          "traders": 7,
-          "changes": 781
+          "positions": 7610,
+          "openInt": 4.9,
+          "changes": 561
         }
       }
     ]
   },
   {
     "name": "\"BRAZILIAN REAL - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 61450,
     "totalChange": -99,
-    "totalTraders": 68,
     "contracts": "\"(CONTRACTS OF BRL 100,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 169,
           "openInt": 0.3,
-          "traders": ".",
           "changes": 0
         },
         "short": {
           "positions": 44669,
           "openInt": 72.7,
-          "traders": 4,
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 49635,
-          "openInt": 80.8,
-          "traders": 15,
-          "changes": -2022
-        },
-        "short": {
-          "positions": 2445,
-          "openInt": 4,
-          "traders": 5,
-          "changes": -61
-        },
-        "spreading": {
-          "positions": 33,
-          "openInt": 0.1,
-          "traders": ".",
           "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 7264,
-          "openInt": 11.8,
-          "traders": 17,
-          "changes": 2124
+          "positions": 49635,
+          "openInt": 80.8,
+          "changes": -2022
         },
         "short": {
-          "positions": 10539,
-          "openInt": 17.2,
-          "traders": 13,
-          "changes": -119
-        },
-        "spreading": {
-          "positions": 91,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": 65
+          "positions": 2445,
+          "openInt": 4,
+          "changes": -61
         }
       }
     ]
   },
   {
     "name": "\"NZ DOLLAR - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 56235,
     "totalChange": 5391,
-    "totalTraders": 101,
     "contracts": "\"(CONTRACTS OF NZD 100,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 34038,
           "openInt": 60.5,
-          "traders": 10,
           "changes": 7972
         },
         "short": {
           "positions": 5746,
           "openInt": 10.2,
-          "traders": 4,
           "changes": 1810
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": -28
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 1607,
-          "openInt": 2.9,
-          "traders": 6,
-          "changes": -2364
-        },
-        "short": {
-          "positions": 21985,
-          "openInt": 39.1,
-          "traders": 24,
-          "changes": 1225
-        },
-        "spreading": {
-          "positions": 21,
-          "openInt": 0,
-          "traders": ".",
-          "changes": -76
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 17606,
-          "openInt": 31.3,
-          "traders": 19,
-          "changes": 605
+          "positions": 1607,
+          "openInt": 2.9,
+          "changes": -2364
         },
         "short": {
-          "positions": 20582,
-          "openInt": 36.6,
-          "traders": 29,
-          "changes": 1833
-        },
-        "spreading": {
-          "positions": 481,
-          "openInt": 0.9,
-          "traders": 9,
-          "changes": 101
+          "positions": 21985,
+          "openInt": 39.1,
+          "changes": 1225
         }
       }
     ]
   },
   {
     "name": "\"SO AFRICAN RAND - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 22801,
     "totalChange": 1138,
-    "totalTraders": 28,
     "contracts": "\"(CONTRACTS OF ZAR 500,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
           "changes": 0
         },
         "short": {
           "positions": 11496,
           "openInt": 50.4,
-          "traders": 4,
-          "changes": -213
-        },
-        "spreading": {
-          "positions": 16,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 19836,
-          "openInt": 87,
-          "traders": 6,
-          "changes": 1490
-        },
-        "short": {
-          "positions": 1639,
-          "openInt": 7.2,
-          "traders": ".",
-          "changes": -265
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
           "changes": -213
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 1552,
-          "openInt": 6.8,
-          "traders": 5,
-          "changes": 270
+          "positions": 19836,
+          "openInt": 87,
+          "changes": 1490
         },
         "short": {
-          "positions": 7299,
-          "openInt": 32,
-          "traders": 10,
-          "changes": 2050
-        },
-        "spreading": {
-          "positions": 565,
-          "openInt": 2.5,
-          "traders": ".",
-          "changes": -299
+          "positions": 1639,
+          "openInt": 7.2,
+          "changes": -265
         }
       }
     ]
   },
   {
     "name": "\"DJIA Consolidated - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 41470,
     "totalChange": 1746,
-    "totalTraders": 94,
     "contracts": "\"($10 X DJIA INDEX)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 20596,
           "openInt": 49.7,
-          "traders": 17,
           "changes": 377
         },
         "short": {
           "positions": 8083,
           "openInt": 19.5,
-          "traders": 10,
           "changes": -2179
-        },
-        "spreading": {
-          "positions": 243,
-          "openInt": 0.6,
-          "traders": ".",
-          "changes": -99
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 2992,
-          "openInt": 7.2,
-          "traders": 14,
-          "changes": 536
-        },
-        "short": {
-          "positions": 9945,
-          "openInt": 24,
-          "traders": 12,
-          "changes": 3034
-        },
-        "spreading": {
-          "positions": 339,
-          "openInt": 0.8,
-          "traders": 4,
-          "changes": -496
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 9436,
-          "openInt": 22.8,
-          "traders": 12,
-          "changes": 964
+          "positions": 2992,
+          "openInt": 7.2,
+          "changes": 536
         },
         "short": {
-          "positions": 7027,
-          "openInt": 16.9,
-          "traders": 22,
-          "changes": 744
-        },
-        "spreading": {
-          "positions": 34,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": -158
+          "positions": 9945,
+          "openInt": 24,
+          "changes": 3034
         }
       }
     ]
   },
   {
     "name": "\"DJIA x $5 - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 82940,
     "totalChange": 3492,
-    "totalTraders": 94,
     "contracts": "\"($5 X DJIA INDEX)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 41191,
           "openInt": 49.7,
-          "traders": 17,
           "changes": 754
         },
         "short": {
           "positions": 16166,
           "openInt": 19.5,
-          "traders": 10,
           "changes": -4358
-        },
-        "spreading": {
-          "positions": 485,
-          "openInt": 0.6,
-          "traders": ".",
-          "changes": -198
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 5983,
-          "openInt": 7.2,
-          "traders": 14,
-          "changes": 1071
-        },
-        "short": {
-          "positions": 19890,
-          "openInt": 24,
-          "traders": 12,
-          "changes": 6068
-        },
-        "spreading": {
-          "positions": 678,
-          "openInt": 0.8,
-          "traders": 4,
-          "changes": -992
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 18871,
-          "openInt": 22.8,
-          "traders": 12,
-          "changes": 1928
+          "positions": 5983,
+          "openInt": 7.2,
+          "changes": 1071
         },
         "short": {
-          "positions": 14054,
-          "openInt": 16.9,
-          "traders": 22,
-          "changes": 1488
-        },
-        "spreading": {
-          "positions": 68,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": -315
+          "positions": 19890,
+          "openInt": 24,
+          "changes": 6068
         }
       }
     ]
   },
   {
     "name": "\"DOW JONES U.S. REAL ESTATE IDX - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 40068,
     "totalChange": 1033,
-    "totalTraders": 30,
     "contracts": "\"($100 X DJ US REAL ESTATE INDEX)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 21113,
           "openInt": 52.7,
-          "traders": 5,
           "changes": -136
         },
         "short": {
           "positions": 31016,
           "openInt": 77.4,
-          "traders": 5,
           "changes": 897
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 12342,
-          "openInt": 30.8,
-          "traders": 15,
-          "changes": 1999
-        },
-        "short": {
-          "positions": 4044,
-          "openInt": 10.1,
-          "traders": ".",
-          "changes": -65
-        },
-        "spreading": {
-          "positions": 1170,
-          "openInt": 2.9,
-          "traders": ".",
-          "changes": 65
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 1566,
-          "openInt": 3.9,
-          "traders": ".",
-          "changes": -929
+          "positions": 12342,
+          "openInt": 30.8,
+          "changes": 1999
         },
         "short": {
-          "positions": 2588,
-          "openInt": 6.5,
-          "traders": ".",
-          "changes": -120
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": -13
+          "positions": 4044,
+          "openInt": 10.1,
+          "changes": -65
         }
       }
     ]
   },
   {
     "name": "\"S&P 500 Consolidated - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 452391,
     "totalChange": 10656,
-    "totalTraders": 538,
     "contracts": "\"(S&P 500 INDEX X $250.00)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 42552,
           "openInt": 9.4,
-          "traders": 38,
           "changes": -2068
         },
         "short": {
           "positions": 67685,
           "openInt": 15,
-          "traders": 40,
           "changes": 2073
-        },
-        "spreading": {
-          "positions": 9037,
-          "openInt": 2,
-          "traders": 30,
-          "changes": 1402
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 188609,
-          "openInt": 41.7,
-          "traders": 141,
-          "changes": -3012
-        },
-        "short": {
-          "positions": 133174,
-          "openInt": 29.4,
-          "traders": 99,
-          "changes": 14743
-        },
-        "spreading": {
-          "positions": 63191,
-          "openInt": 14,
-          "traders": 117,
-          "changes": 4017
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 58274,
-          "openInt": 12.9,
-          "traders": 75,
-          "changes": 6046
+          "positions": 188609,
+          "openInt": 41.7,
+          "changes": -3012
         },
         "short": {
-          "positions": 60004,
-          "openInt": 13.3,
-          "traders": 76,
-          "changes": -8924
-        },
-        "spreading": {
-          "positions": 11738,
-          "openInt": 2.6,
-          "traders": 65,
-          "changes": 874
+          "positions": 133174,
+          "openInt": 29.4,
+          "changes": 14743
         }
       }
     ]
   },
   {
     "name": "\"E-MINI S&P CONSU STAPLES INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 18913,
     "totalChange": 829,
-    "totalTraders": 24,
     "contracts": "\"($100 x S&P Select Sector Consumer Staples Index price)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 1594,
           "openInt": 8.4,
-          "traders": ".",
           "changes": -200
         },
         "short": {
           "positions": 16945,
           "openInt": 89.6,
-          "traders": 10,
           "changes": 1594
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 12652,
-          "openInt": 66.9,
-          "traders": 7,
-          "changes": 704
-        },
-        "short": {
-          "positions": 581,
-          "openInt": 3.1,
-          "traders": ".",
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 99,
-          "openInt": 0.5,
-          "traders": ".",
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 1271,
-          "openInt": 6.7,
-          "traders": ".",
-          "changes": 70
+          "positions": 12652,
+          "openInt": 66.9,
+          "changes": 704
         },
         "short": {
-          "positions": 430,
-          "openInt": 2.3,
-          "traders": ".",
-          "changes": -518
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
+          "positions": 581,
+          "openInt": 3.1,
           "changes": 0
         }
       }
@@ -1297,287 +631,139 @@
   },
   {
     "name": "\"E-MINI S&P ENERGY INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 43430,
     "totalChange": -527,
-    "totalTraders": 40,
     "contracts": "\"($100 x S&P Select Sector Energy Index price)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 13739,
           "openInt": 31.6,
-          "traders": 4,
           "changes": 2987
         },
         "short": {
           "positions": 41092,
           "openInt": 94.6,
-          "traders": 10,
           "changes": 1641
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 17658,
-          "openInt": 40.7,
-          "traders": 16,
-          "changes": -1934
-        },
-        "short": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": -1881
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 7387,
-          "openInt": 17,
-          "traders": 8,
-          "changes": 392
+          "positions": 17658,
+          "openInt": 40.7,
+          "changes": -1934
         },
         "short": {
-          "positions": 1334,
-          "openInt": 3.1,
-          "traders": ".",
-          "changes": 4
-        },
-        "spreading": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
-          "changes": 0
+          "changes": -1881
         }
       }
     ]
   },
   {
     "name": "\"E-MINI S&P 500 - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 2261956,
     "totalChange": 53282,
-    "totalTraders": 538,
     "contracts": "\"($50 X S&P 500 INDEX)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 212762,
           "openInt": 9.4,
-          "traders": 38,
           "changes": -10339
         },
         "short": {
           "positions": 338423,
           "openInt": 15,
-          "traders": 40,
           "changes": 10364
-        },
-        "spreading": {
-          "positions": 45187,
-          "openInt": 2,
-          "traders": 30,
-          "changes": 7010
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 943043,
-          "openInt": 41.7,
-          "traders": 141,
-          "changes": -15058
-        },
-        "short": {
-          "positions": 665870,
-          "openInt": 29.4,
-          "traders": 99,
-          "changes": 73715
-        },
-        "spreading": {
-          "positions": 315954,
-          "openInt": 14,
-          "traders": 117,
-          "changes": 20086
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 291368,
-          "openInt": 12.9,
-          "traders": 75,
-          "changes": 30231
+          "positions": 943043,
+          "openInt": 41.7,
+          "changes": -15058
         },
         "short": {
-          "positions": 300020,
-          "openInt": 13.3,
-          "traders": 76,
-          "changes": -44618
-        },
-        "spreading": {
-          "positions": 58692,
-          "openInt": 2.6,
-          "traders": 65,
-          "changes": 4368
+          "positions": 665870,
+          "openInt": 29.4,
+          "changes": 73715
         }
       }
     ]
   },
   {
     "name": "\"E-MINI S&P FINANCIAL INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 29032,
     "totalChange": 602,
-    "totalTraders": 23,
     "contracts": "\"($250 x S&P Select Sector Financial Index price)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 21206,
           "openInt": 73,
-          "traders": 6,
           "changes": 615
         },
         "short": {
           "positions": 24506,
           "openInt": 84.4,
-          "traders": 5,
           "changes": 1103
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 4818,
-          "openInt": 16.6,
-          "traders": 6,
-          "changes": -51
-        },
-        "short": {
-          "positions": 935,
-          "openInt": 3.2,
-          "traders": ".",
-          "changes": -785
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 423,
-          "openInt": 1.5,
-          "traders": ".",
-          "changes": -189
+          "positions": 4818,
+          "openInt": 16.6,
+          "changes": -51
         },
         "short": {
-          "positions": 2077,
-          "openInt": 7.2,
-          "traders": ".",
-          "changes": -150
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
+          "positions": 935,
+          "openInt": 3.2,
+          "changes": -785
         }
       }
     ]
   },
   {
     "name": "\"E-MINI S&P HEALTH CARE INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 21073,
     "totalChange": 244,
-    "totalTraders": 22,
     "contracts": "\"($100 x S&P Select Sector Health Care Index price)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 1789,
           "openInt": 8.5,
-          "traders": ".",
           "changes": 396
         },
         "short": {
           "positions": 20130,
           "openInt": 95.5,
-          "traders": 9,
           "changes": 240
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 13399,
-          "openInt": 63.6,
-          "traders": 8,
-          "changes": -244
-        },
-        "short": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 2102,
-          "openInt": 10,
-          "traders": ".",
-          "changes": 156
+          "positions": 13399,
+          "openInt": 63.6,
+          "changes": -244
         },
         "short": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
           "changes": 0
         }
       }
@@ -1585,215 +771,104 @@
   },
   {
     "name": "\"E-MINI S&P UTILITIES INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 21450,
     "totalChange": 2291,
-    "totalTraders": 30,
     "contracts": "\"($100 x S&P Select Sector Utilities Index price)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 3232,
           "openInt": 15.1,
-          "traders": 5,
           "changes": -77
         },
         "short": {
           "positions": 17673,
           "openInt": 82.4,
-          "traders": 8,
           "changes": 2847
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 12132,
-          "openInt": 56.6,
-          "traders": 9,
-          "changes": 2157
-        },
-        "short": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": -950
-        },
-        "spreading": {
-          "positions": 1068,
-          "openInt": 5,
-          "traders": ".",
-          "changes": -1
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 2326,
-          "openInt": 10.8,
-          "traders": ".",
-          "changes": 717
+          "positions": 12132,
+          "openInt": 56.6,
+          "changes": 2157
         },
         "short": {
-          "positions": 1851,
-          "openInt": 8.6,
-          "traders": 5,
-          "changes": 286
-        },
-        "spreading": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
-          "changes": 0
+          "changes": -950
         }
       }
     ]
   },
   {
     "name": "\"MICRO E-MINI S&P 500 INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 205271,
     "totalChange": 9829,
-    "totalTraders": 24,
     "contracts": "\"($5 X S&P 500 INDEX)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 16912,
           "openInt": 8.2,
-          "traders": ".",
           "changes": 2044
         },
         "short": {
           "positions": 15416,
           "openInt": 7.5,
-          "traders": ".",
           "changes": 5050
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 20719,
-          "openInt": 10.1,
-          "traders": 9,
-          "changes": 449
-        },
-        "short": {
-          "positions": 5,
-          "openInt": 0,
-          "traders": ".",
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 237,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": 52
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 7346,
-          "openInt": 3.6,
-          "traders": ".",
-          "changes": -7072
+          "positions": 20719,
+          "openInt": 10.1,
+          "changes": 449
         },
         "short": {
-          "positions": 158202,
-          "openInt": 77.1,
-          "traders": 8,
-          "changes": 8074
-        },
-        "spreading": {
-          "positions": 2203,
-          "openInt": 1.1,
-          "traders": 4,
-          "changes": -3787
+          "positions": 5,
+          "openInt": 0,
+          "changes": 0
         }
       }
     ]
   },
   {
     "name": "\"ADJUSTED INT RATE S&P 500 TOTL - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 212310,
     "totalChange": -2800,
-    "totalTraders": 20,
     "contracts": "\"(S&P 500 TOTAL RETURN INDEX x $25)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 53558,
           "openInt": 25.2,
-          "traders": 6,
           "changes": -1430
         },
         "short": {
           "positions": 66892,
           "openInt": 31.5,
-          "traders": 7,
           "changes": 1400
-        },
-        "spreading": {
-          "positions": 103788,
-          "openInt": 48.9,
-          "traders": 9,
-          "changes": -870
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "short": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 14649,
-          "openInt": 6.9,
-          "traders": ".",
-          "changes": -500
+          "positions": 0,
+          "openInt": 0,
+          "changes": 0
         },
         "short": {
-          "positions": 1012,
-          "openInt": 0.5,
-          "traders": ".",
-          "changes": -3330
-        },
-        "spreading": {
-          "positions": 38788,
-          "openInt": 18.3,
-          "traders": 6,
+          "positions": 0,
+          "openInt": 0,
           "changes": 0
         }
       }
@@ -1801,359 +876,174 @@
   },
   {
     "name": "\"NASDAQ-100 Consolidated - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 49984,
     "totalChange": 4640,
-    "totalTraders": 293,
     "contracts": "\"(NASDAQ 100 INDEX X $100)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 10276,
           "openInt": 20.6,
-          "traders": 31,
           "changes": 957
         },
         "short": {
           "positions": 10965,
           "openInt": 21.9,
-          "traders": 21,
           "changes": 1367
-        },
-        "spreading": {
-          "positions": 506,
-          "openInt": 1,
-          "traders": 11,
-          "changes": 318
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 14304,
-          "openInt": 28.6,
-          "traders": 49,
-          "changes": -102
-        },
-        "short": {
-          "positions": 11991,
-          "openInt": 24,
-          "traders": 49,
-          "changes": 2367
-        },
-        "spreading": {
-          "positions": 1665,
-          "openInt": 3.3,
-          "traders": 37,
-          "changes": 45
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 12361,
-          "openInt": 24.7,
-          "traders": 47,
-          "changes": 2412
+          "positions": 14304,
+          "openInt": 28.6,
+          "changes": -102
         },
         "short": {
-          "positions": 10439,
-          "openInt": 20.9,
-          "traders": 47,
-          "changes": -525
-        },
-        "spreading": {
-          "positions": 996,
-          "openInt": 2,
-          "traders": 24,
-          "changes": 139
+          "positions": 11991,
+          "openInt": 24,
+          "changes": 2367
         }
       }
     ]
   },
   {
     "name": "\"NASDAQ MINI - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 249921,
     "totalChange": 23199,
-    "totalTraders": 293,
     "contracts": "\"(NASDAQ 100 STOCK INDEX X $20)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 51380,
           "openInt": 20.6,
-          "traders": 31,
           "changes": 4787
         },
         "short": {
           "positions": 54824,
           "openInt": 21.9,
-          "traders": 21,
           "changes": 6836
-        },
-        "spreading": {
-          "positions": 2531,
-          "openInt": 1,
-          "traders": 11,
-          "changes": 1590
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 71521,
-          "openInt": 28.6,
-          "traders": 49,
-          "changes": -510
-        },
-        "short": {
-          "positions": 59957,
-          "openInt": 24,
-          "traders": 49,
-          "changes": 11836
-        },
-        "spreading": {
-          "positions": 8327,
-          "openInt": 3.3,
-          "traders": 37,
-          "changes": 225
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 61804,
-          "openInt": 24.7,
-          "traders": 47,
-          "changes": 12060
+          "positions": 71521,
+          "openInt": 28.6,
+          "changes": -510
         },
         "short": {
-          "positions": 52194,
-          "openInt": 20.9,
-          "traders": 47,
-          "changes": -2625
-        },
-        "spreading": {
-          "positions": 4981,
-          "openInt": 2,
-          "traders": 24,
-          "changes": 694
+          "positions": 59957,
+          "openInt": 24,
+          "changes": 11836
         }
       }
     ]
   },
   {
     "name": "\"MICRO E-MINI NASDAQ-100 INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 89076,
     "totalChange": -4334,
-    "totalTraders": 39,
     "contracts": "\"(NASDAQ 100 STOCK INDEX x $2)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 5808,
           "openInt": 6.5,
-          "traders": 4,
           "changes": 2966
         },
         "short": {
           "positions": 921,
           "openInt": 1,
-          "traders": ".",
           "changes": -218
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 945,
-          "openInt": 1.1,
-          "traders": ".",
-          "changes": 107
-        },
-        "short": {
-          "positions": 577,
-          "openInt": 0.6,
-          "traders": ".",
-          "changes": 55
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 23472,
-          "openInt": 26.4,
-          "traders": 10,
-          "changes": -4400
+          "positions": 945,
+          "openInt": 1.1,
+          "changes": 107
         },
         "short": {
-          "positions": 64976,
-          "openInt": 72.9,
-          "traders": 11,
-          "changes": -1170
-        },
-        "spreading": {
-          "positions": 2643,
-          "openInt": 3,
-          "traders": 5,
-          "changes": -150
+          "positions": 577,
+          "openInt": 0.6,
+          "changes": 55
         }
       }
     ]
   },
   {
     "name": "\"RUSSELL E-MINI - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 524949,
     "totalChange": 30560,
-    "totalTraders": 336,
     "contracts": "\"(RUSSEL 2000 INDEX X $50)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 225906,
           "openInt": 43,
-          "traders": 34,
           "changes": 23015
         },
         "short": {
           "positions": 11946,
           "openInt": 2.3,
-          "traders": 10,
           "changes": 1328
-        },
-        "spreading": {
-          "positions": 2426,
-          "openInt": 0.5,
-          "traders": 4,
-          "changes": 324
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 142206,
-          "openInt": 27.1,
-          "traders": 69,
-          "changes": -4331
-        },
-        "short": {
-          "positions": 263769,
-          "openInt": 50.2,
-          "traders": 76,
-          "changes": 21890
-        },
-        "spreading": {
-          "positions": 53145,
-          "openInt": 10.1,
-          "traders": 51,
-          "changes": -127
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 59608,
-          "openInt": 11.4,
-          "traders": 41,
-          "changes": 13441
+          "positions": 142206,
+          "openInt": 27.1,
+          "changes": -4331
         },
         "short": {
-          "positions": 116888,
-          "openInt": 22.3,
-          "traders": 75,
-          "changes": 2439
-        },
-        "spreading": {
-          "positions": 5968,
-          "openInt": 1.1,
-          "traders": 26,
-          "changes": 915
+          "positions": 263769,
+          "openInt": 50.2,
+          "changes": 21890
         }
       }
     ]
   },
   {
     "name": "\"EMINI RUSSELL 1000 VALUE INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 29337,
     "totalChange": 939,
-    "totalTraders": 28,
     "contracts": "\"(RUSSELL 1000 VALUE INDEX x $50)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 7588,
           "openInt": 25.9,
-          "traders": ".",
           "changes": 1059
         },
         "short": {
           "positions": 28023,
           "openInt": 95.5,
-          "traders": 7,
           "changes": 1059
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 17228,
-          "openInt": 58.7,
-          "traders": 13,
-          "changes": 42
-        },
-        "short": {
-          "positions": 423,
-          "openInt": 1.4,
-          "traders": ".",
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 2539,
-          "openInt": 8.7,
-          "traders": 4,
-          "changes": -111
+          "positions": 17228,
+          "openInt": 58.7,
+          "changes": 42
         },
         "short": {
-          "positions": 347,
-          "openInt": 1.2,
-          "traders": ".",
-          "changes": 26
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
+          "positions": 423,
+          "openInt": 1.4,
           "changes": 0
         }
       }
@@ -2161,791 +1051,384 @@
   },
   {
     "name": "\"NIKKEI STOCK AVERAGE YEN DENOM - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 41397,
     "totalChange": 2332,
-    "totalTraders": 55,
     "contracts": "\"(NIKKEI INDEX X JPY 500)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 3869,
           "openInt": 9.3,
-          "traders": 8,
           "changes": -70
         },
         "short": {
           "positions": 2195,
           "openInt": 5.3,
-          "traders": 5,
           "changes": -980
-        },
-        "spreading": {
-          "positions": 709,
-          "openInt": 1.7,
-          "traders": ".",
-          "changes": 74
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 20532,
-          "openInt": 49.6,
-          "traders": 13,
-          "changes": 688
-        },
-        "short": {
-          "positions": 4317,
-          "openInt": 10.4,
-          "traders": 6,
-          "changes": 360
-        },
-        "spreading": {
-          "positions": 2447,
-          "openInt": 5.9,
-          "traders": 6,
-          "changes": 216
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 3326,
-          "openInt": 8,
-          "traders": 5,
-          "changes": 1862
+          "positions": 20532,
+          "openInt": 49.6,
+          "changes": 688
         },
         "short": {
-          "positions": 6507,
-          "openInt": 15.7,
-          "traders": 14,
-          "changes": 1101
-        },
-        "spreading": {
-          "positions": 35,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": 35
+          "positions": 4317,
+          "openInt": 10.4,
+          "changes": 360
         }
       }
     ]
   },
   {
     "name": "\"MSCI EAFE  - ICE FUTURES U.S.\"",
+    "date": "2022-05-10",
     "openInterest": 418447,
     "totalChange": 7418,
-    "totalTraders": 203,
     "contracts": "\"(MSCI EAFE INDEX X $50)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 30870,
           "openInt": 7.4,
-          "traders": 12,
           "changes": -491
         },
         "short": {
           "positions": 185095,
           "openInt": 44.2,
-          "traders": 13,
           "changes": -8747
-        },
-        "spreading": {
-          "positions": 3426,
-          "openInt": 0.8,
-          "traders": 7,
-          "changes": 128
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 283298,
-          "openInt": 67.7,
-          "traders": 75,
-          "changes": 5857
-        },
-        "short": {
-          "positions": 134055,
-          "openInt": 32,
-          "traders": 54,
-          "changes": 21808
-        },
-        "spreading": {
-          "positions": 54445,
-          "openInt": 13,
-          "traders": 43,
-          "changes": -81
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 20339,
-          "openInt": 4.9,
-          "traders": 16,
-          "changes": 2620
+          "positions": 283298,
+          "openInt": 67.7,
+          "changes": 5857
         },
         "short": {
-          "positions": 19705,
-          "openInt": 4.7,
-          "traders": 18,
-          "changes": -673
-        },
-        "spreading": {
-          "positions": 1826,
-          "openInt": 0.4,
-          "traders": 7,
-          "changes": -176
+          "positions": 134055,
+          "openInt": 32,
+          "changes": 21808
         }
       }
     ]
   },
   {
     "name": "\"MSCI EM INDEX - ICE FUTURES U.S.\"",
+    "date": "2022-05-10",
     "openInterest": 1233357,
     "totalChange": 36476,
-    "totalTraders": 419,
     "contracts": "\"(MSCI Emerging Markets Index x $50)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 107431,
           "openInt": 8.7,
-          "traders": 25,
           "changes": 972
         },
         "short": {
           "positions": 503424,
           "openInt": 40.8,
-          "traders": 20,
           "changes": -850
-        },
-        "spreading": {
-          "positions": 6266,
-          "openInt": 0.5,
-          "traders": 10,
-          "changes": -3223
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 703966,
-          "openInt": 57.1,
-          "traders": 135,
-          "changes": -4067
-        },
-        "short": {
-          "positions": 406387,
-          "openInt": 32.9,
-          "traders": 100,
-          "changes": 24632
-        },
-        "spreading": {
-          "positions": 144878,
-          "openInt": 11.7,
-          "traders": 88,
-          "changes": -4841
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 122980,
-          "openInt": 10,
-          "traders": 46,
-          "changes": 2282
+          "positions": 703966,
+          "openInt": 57.1,
+          "changes": -4067
         },
         "short": {
-          "positions": 103082,
-          "openInt": 8.4,
-          "traders": 52,
-          "changes": 12491
-        },
-        "spreading": {
-          "positions": 10962,
-          "openInt": 0.9,
-          "traders": 31,
-          "changes": 3213
+          "positions": 406387,
+          "openInt": 32.9,
+          "changes": 24632
         }
       }
     ]
   },
   {
     "name": "\"E-MINI S&P 400 STOCK INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 60107,
     "totalChange": 5681,
-    "totalTraders": 66,
     "contracts": "\"(S&P 400 INDEX X $100)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 32412,
           "openInt": 53.9,
-          "traders": 7,
           "changes": 4962
         },
         "short": {
           "positions": 2386,
           "openInt": 4,
-          "traders": ".",
           "changes": -390
-        },
-        "spreading": {
-          "positions": 251,
-          "openInt": 0.4,
-          "traders": ".",
-          "changes": 78
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 15071,
-          "openInt": 25.1,
-          "traders": 19,
-          "changes": -294
-        },
-        "short": {
-          "positions": 44650,
-          "openInt": 74.3,
-          "traders": 27,
-          "changes": 4650
-        },
-        "spreading": {
-          "positions": 3048,
-          "openInt": 5.1,
-          "traders": 12,
-          "changes": 419
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 2016,
-          "openInt": 3.4,
-          "traders": 5,
-          "changes": 596
+          "positions": 15071,
+          "openInt": 25.1,
+          "changes": -294
         },
         "short": {
-          "positions": 4582,
-          "openInt": 7.6,
-          "traders": 4,
-          "changes": 936
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": -3
+          "positions": 44650,
+          "openInt": 74.3,
+          "changes": 4650
         }
       }
     ]
   },
   {
     "name": "\"S&P 500 ANNUAL DIVIDEND INDEX - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 219691,
     "totalChange": 4474,
-    "totalTraders": 91,
     "contracts": "\"(S&P 500 ANNUAL DIVIDEND INDEX X $250)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 7461,
           "openInt": 3.4,
-          "traders": 7,
           "changes": 1685
         },
         "short": {
           "positions": 157425,
           "openInt": 71.7,
-          "traders": 24,
           "changes": 2672
-        },
-        "spreading": {
-          "positions": 32375,
-          "openInt": 14.7,
-          "traders": 15,
-          "changes": -2823
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 18557,
-          "openInt": 8.4,
-          "traders": 11,
-          "changes": 552
-        },
-        "short": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 2363,
-          "openInt": 1.1,
-          "traders": ".",
-          "changes": 800
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 137887,
-          "openInt": 62.8,
-          "traders": 31,
-          "changes": 1155
+          "positions": 18557,
+          "openInt": 8.4,
+          "changes": 552
         },
         "short": {
-          "positions": 2301,
-          "openInt": 1,
-          "traders": 5,
-          "changes": 730
-        },
-        "spreading": {
-          "positions": 18478,
-          "openInt": 8.4,
-          "traders": 9,
-          "changes": 3514
+          "positions": 0,
+          "openInt": 0,
+          "changes": 0
         }
       }
     ]
   },
   {
     "name": "\"UST BOND - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 1207560,
     "totalChange": 20409,
-    "totalTraders": 188,
     "contracts": "\"(CONTRACTS OF $100,000 FACE VALUE)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 9078,
           "openInt": 0.8,
-          "traders": 8,
           "changes": -2382
         },
         "short": {
           "positions": 135039,
           "openInt": 11.2,
-          "traders": 20,
           "changes": -11566
-        },
-        "spreading": {
-          "positions": 813,
-          "openInt": 0.1,
-          "traders": 6,
-          "changes": -3
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 591502,
-          "openInt": 49,
-          "traders": 59,
-          "changes": 9852
-        },
-        "short": {
-          "positions": 288751,
-          "openInt": 23.9,
-          "traders": 36,
-          "changes": 4723
-        },
-        "spreading": {
-          "positions": 193484,
-          "openInt": 16,
-          "traders": 59,
-          "changes": -3156
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 130520,
-          "openInt": 10.8,
-          "traders": 24,
-          "changes": 4884
+          "positions": 591502,
+          "openInt": 49,
+          "changes": 9852
         },
         "short": {
-          "positions": 327270,
-          "openInt": 27.1,
-          "traders": 30,
-          "changes": 29377
-        },
-        "spreading": {
-          "positions": 40707,
-          "openInt": 3.4,
-          "traders": 19,
-          "changes": 11860
+          "positions": 288751,
+          "openInt": 23.9,
+          "changes": 4723
         }
       }
     ]
   },
   {
     "name": "\"ULTRA UST BOND - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 1265018,
     "totalChange": -12112,
-    "totalTraders": 153,
     "contracts": "\"(CONTRACTS OF $100,000 FACE VALUE)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 22730,
           "openInt": 1.8,
-          "traders": 8,
           "changes": -10510
         },
         "short": {
           "positions": 47882,
           "openInt": 3.8,
-          "traders": 8,
           "changes": -9124
-        },
-        "spreading": {
-          "positions": 9018,
-          "openInt": 0.7,
-          "traders": 5,
-          "changes": 2041
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 724817,
-          "openInt": 57.3,
-          "traders": 70,
-          "changes": -2323
-        },
-        "short": {
-          "positions": 201886,
-          "openInt": 16,
-          "traders": 28,
-          "changes": 1775
-        },
-        "spreading": {
-          "positions": 227875,
-          "openInt": 18,
-          "traders": 58,
-          "changes": 3656
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 57373,
-          "openInt": 4.5,
-          "traders": 5,
-          "changes": 2849
+          "positions": 724817,
+          "openInt": 57.3,
+          "changes": -2323
         },
         "short": {
-          "positions": 639763,
-          "openInt": 50.6,
-          "traders": 24,
-          "changes": -4832
-        },
-        "spreading": {
-          "positions": 5465,
-          "openInt": 0.4,
-          "traders": 8,
-          "changes": -1902
+          "positions": 201886,
+          "openInt": 16,
+          "changes": 1775
         }
       }
     ]
   },
   {
     "name": "\"UST 2Y NOTE - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 2264774,
     "totalChange": 32626,
-    "totalTraders": 370,
     "contracts": "\"(CONTRACTS OF $200,000 FACE VALUE)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 82146,
           "openInt": 3.6,
-          "traders": 15,
           "changes": -15780
         },
         "short": {
           "positions": 216037,
           "openInt": 9.5,
-          "traders": 44,
           "changes": 11149
-        },
-        "spreading": {
-          "positions": 11715,
-          "openInt": 0.5,
-          "traders": 9,
-          "changes": -2631
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 922416,
-          "openInt": 40.7,
-          "traders": 90,
-          "changes": 40631
-        },
-        "short": {
-          "positions": 423789,
-          "openInt": 18.7,
-          "traders": 61,
-          "changes": -17729
-        },
-        "spreading": {
-          "positions": 431635,
-          "openInt": 19.1,
-          "traders": 82,
-          "changes": 1662
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 485258,
-          "openInt": 21.4,
-          "traders": 38,
-          "changes": -18668
+          "positions": 922416,
+          "openInt": 40.7,
+          "changes": 40631
         },
         "short": {
-          "positions": 437905,
-          "openInt": 19.3,
-          "traders": 61,
-          "changes": -40883
-        },
-        "spreading": {
-          "positions": 132438,
-          "openInt": 5.8,
-          "traders": 29,
-          "changes": 17938
+          "positions": 423789,
+          "openInt": 18.7,
+          "changes": -17729
         }
       }
     ]
   },
   {
     "name": "\"UST 10Y NOTE - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 3722697,
     "totalChange": 41933,
-    "totalTraders": 408,
     "contracts": "\"(CONTRACTS OF $100,000 FACE VALUE)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 78116,
           "openInt": 2.1,
-          "traders": 20,
           "changes": -4915
         },
         "short": {
           "positions": 336148,
           "openInt": 9,
-          "traders": 36,
           "changes": 20254
-        },
-        "spreading": {
-          "positions": 16687,
-          "openInt": 0.4,
-          "traders": 14,
-          "changes": 10047
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 1609207,
-          "openInt": 43.2,
-          "traders": 98,
-          "changes": -55594
-        },
-        "short": {
-          "positions": 1255882,
-          "openInt": 33.7,
-          "traders": 85,
-          "changes": -11855
-        },
-        "spreading": {
-          "positions": 701406,
-          "openInt": 18.8,
-          "traders": 104,
-          "changes": -17381
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 653992,
-          "openInt": 17.6,
-          "traders": 59,
-          "changes": 50814
+          "positions": 1609207,
+          "openInt": 43.2,
+          "changes": -55594
         },
         "short": {
-          "positions": 333045,
-          "openInt": 8.9,
-          "traders": 62,
-          "changes": -40872
-        },
-        "spreading": {
-          "positions": 149925,
-          "openInt": 4,
-          "traders": 57,
-          "changes": 61270
+          "positions": 1255882,
+          "openInt": 33.7,
+          "changes": -11855
         }
       }
     ]
   },
   {
     "name": "\"ULTRA UST 10Y - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 1248012,
     "totalChange": -24853,
-    "totalTraders": 142,
     "contracts": "\"(CONTRACTS OF $100,000 FACE VALUE)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 70615,
           "openInt": 5.7,
-          "traders": 6,
           "changes": -12031
         },
         "short": {
           "positions": 23835,
           "openInt": 1.9,
-          "traders": 5,
           "changes": 1587
-        },
-        "spreading": {
-          "positions": 1368,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": 6
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 479254,
-          "openInt": 38.4,
-          "traders": 29,
-          "changes": -15461
-        },
-        "short": {
-          "positions": 511581,
-          "openInt": 41,
-          "traders": 58,
-          "changes": -16020
-        },
-        "spreading": {
-          "positions": 221699,
-          "openInt": 17.8,
-          "traders": 59,
-          "changes": -2918
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 154008,
-          "openInt": 12.3,
-          "traders": 11,
-          "changes": -1089
+          "positions": 479254,
+          "openInt": 38.4,
+          "changes": -15461
         },
         "short": {
-          "positions": 128391,
-          "openInt": 10.3,
-          "traders": 15,
-          "changes": -24267
-        },
-        "spreading": {
-          "positions": 52072,
-          "openInt": 4.2,
-          "traders": 13,
-          "changes": 13829
+          "positions": 511581,
+          "openInt": 41,
+          "changes": -16020
         }
       }
     ]
   },
   {
     "name": "\"MICRO 10 YEAR YIELD - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 4519,
     "totalChange": ".",
-    "totalTraders": 21,
     "contracts": "\"1000 x Index Points\"",
     "metrics": [
-      {
-        "name": "Dealer Intermediary",
-        "long": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": "."
-        },
-        "short": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": "."
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": "."
-        }
-      },
       {
         "name": "Asset Manager/Institutional",
         "long": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
           "changes": "."
         },
         "short": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
-          "changes": "."
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
           "changes": "."
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 1074,
-          "openInt": 23.8,
-          "traders": ".",
+          "positions": 0,
+          "openInt": 0,
           "changes": "."
         },
         "short": {
-          "positions": 2916,
-          "openInt": 64.5,
-          "traders": 4,
-          "changes": "."
-        },
-        "spreading": {
-          "positions": 1159,
-          "openInt": 25.6,
-          "traders": ".",
+          "positions": 0,
+          "openInt": 0,
           "changes": "."
         }
       }
@@ -2953,935 +1436,454 @@
   },
   {
     "name": "\"UST 5Y NOTE - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 3813677,
     "totalChange": -5159,
-    "totalTraders": 349,
     "contracts": "\"(CONTRACTS OF $100,000 FACE VALUE)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 76237,
           "openInt": 2,
-          "traders": 17,
           "changes": 7032
         },
         "short": {
           "positions": 364308,
           "openInt": 9.6,
-          "traders": 40,
           "changes": 16886
-        },
-        "spreading": {
-          "positions": 24153,
-          "openInt": 0.6,
-          "traders": 9,
-          "changes": 6276
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 1827910,
-          "openInt": 47.9,
-          "traders": 85,
-          "changes": 12529
-        },
-        "short": {
-          "positions": 759029,
-          "openInt": 19.9,
-          "traders": 71,
-          "changes": -12056
-        },
-        "spreading": {
-          "positions": 823492,
-          "openInt": 21.6,
-          "traders": 92,
-          "changes": 4257
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 258143,
-          "openInt": 6.8,
-          "traders": 35,
-          "changes": -40330
+          "positions": 1827910,
+          "openInt": 47.9,
+          "changes": 12529
         },
         "short": {
-          "positions": 1009145,
-          "openInt": 26.5,
-          "traders": 64,
-          "changes": 10167
-        },
-        "spreading": {
-          "positions": 166070,
-          "openInt": 4.4,
-          "traders": 34,
-          "changes": 5492
+          "positions": 759029,
+          "openInt": 19.9,
+          "changes": -12056
         }
       }
     ]
   },
   {
     "name": "\"FED FUNDS - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 1750404,
     "totalChange": 88335,
-    "totalTraders": 118,
     "contracts": "\"(CONTRACTS OF $5,000,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 329056,
           "openInt": 18.8,
-          "traders": 23,
           "changes": 3736
         },
         "short": {
           "positions": 377840,
           "openInt": 21.6,
-          "traders": 33,
           "changes": 24435
-        },
-        "spreading": {
-          "positions": 749618,
-          "openInt": 42.8,
-          "traders": 52,
-          "changes": 37881
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 4423,
-          "openInt": 0.3,
-          "traders": ".",
-          "changes": 4423
-        },
-        "short": {
-          "positions": 21123,
-          "openInt": 1.2,
-          "traders": ".",
-          "changes": 15213
-        },
-        "spreading": {
-          "positions": 18634,
-          "openInt": 1.1,
-          "traders": ".",
-          "changes": 2392
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 127748,
-          "openInt": 7.3,
-          "traders": 27,
-          "changes": -936
+          "positions": 4423,
+          "openInt": 0.3,
+          "changes": 4423
         },
         "short": {
-          "positions": 103579,
-          "openInt": 5.9,
-          "traders": 20,
-          "changes": -18979
-        },
-        "spreading": {
-          "positions": 429813,
-          "openInt": 24.6,
-          "traders": 41,
-          "changes": 29199
+          "positions": 21123,
+          "openInt": 1.2,
+          "changes": 15213
         }
       }
     ]
   },
   {
     "name": "\"EURODOLLARS-3M - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 10439124,
     "totalChange": -109720,
-    "totalTraders": 211,
     "contracts": "\"(CONTRACTS OF $1,000,000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 3933510,
           "openInt": 37.7,
-          "traders": 27,
           "changes": -45310
         },
         "short": {
           "positions": 1021032,
           "openInt": 9.8,
-          "traders": 35,
           "changes": 14544
-        },
-        "spreading": {
-          "positions": 1616207,
-          "openInt": 15.5,
-          "traders": 53,
-          "changes": 71121
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 705081,
-          "openInt": 6.8,
-          "traders": 7,
-          "changes": -93287
-        },
-        "short": {
-          "positions": 379802,
-          "openInt": 3.6,
-          "traders": 20,
-          "changes": -102601
-        },
-        "spreading": {
-          "positions": 417349,
-          "openInt": 4,
-          "traders": 20,
-          "changes": 38516
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 486268,
-          "openInt": 4.7,
-          "traders": 25,
-          "changes": 668
+          "positions": 705081,
+          "openInt": 6.8,
+          "changes": -93287
         },
         "short": {
-          "positions": 3175272,
-          "openInt": 30.4,
-          "traders": 72,
-          "changes": -32286
-        },
-        "spreading": {
-          "positions": 2606343,
-          "openInt": 25,
-          "traders": 76,
-          "changes": -95533
+          "positions": 379802,
+          "openInt": 3.6,
+          "changes": -102601
         }
       }
     ]
   },
   {
     "name": "\"SOFR-3M - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 4913608,
     "totalChange": 112600,
-    "totalTraders": 324,
     "contracts": "\"($2,500 x Contract IMM Index)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 1719162,
           "openInt": 35,
-          "traders": 46,
           "changes": -62045
         },
         "short": {
           "positions": 1244016,
           "openInt": 25.3,
-          "traders": 74,
           "changes": 25938
-        },
-        "spreading": {
-          "positions": 1357743,
-          "openInt": 27.6,
-          "traders": 92,
-          "changes": 38356
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 62246,
-          "openInt": 1.3,
-          "traders": 8,
-          "changes": 28170
-        },
-        "short": {
-          "positions": 327459,
-          "openInt": 6.7,
-          "traders": 21,
-          "changes": 14164
-        },
-        "spreading": {
-          "positions": 92366,
-          "openInt": 1.9,
-          "traders": 16,
-          "changes": 3566
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 567763,
-          "openInt": 11.6,
-          "traders": 51,
-          "changes": 93267
+          "positions": 62246,
+          "openInt": 1.3,
+          "changes": 28170
         },
         "short": {
-          "positions": 795229,
-          "openInt": 16.2,
-          "traders": 57,
-          "changes": 6809
-        },
-        "spreading": {
-          "positions": 1023827,
-          "openInt": 20.8,
-          "traders": 80,
-          "changes": 14573
+          "positions": 327459,
+          "openInt": 6.7,
+          "changes": 14164
         }
       }
     ]
   },
   {
     "name": "\"SOFR-1M - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 417390,
     "totalChange": 47435,
-    "totalTraders": 127,
     "contracts": "\"($4,167 x Contract IMM Index)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 136090,
           "openInt": 32.6,
-          "traders": 26,
           "changes": 15911
         },
         "short": {
           "positions": 137368,
           "openInt": 32.9,
-          "traders": 36,
           "changes": 7127
-        },
-        "spreading": {
-          "positions": 134236,
-          "openInt": 32.2,
-          "traders": 37,
-          "changes": 22818
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 2736,
-          "openInt": 0.7,
-          "traders": ".",
-          "changes": 526
-        },
-        "short": {
-          "positions": 14098,
-          "openInt": 3.4,
-          "traders": ".",
-          "changes": 9059
-        },
-        "spreading": {
-          "positions": 225,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": -6847
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 72444,
-          "openInt": 17.4,
-          "traders": 22,
-          "changes": 21058
+          "positions": 2736,
+          "openInt": 0.7,
+          "changes": 526
         },
         "short": {
-          "positions": 54736,
-          "openInt": 13.1,
-          "traders": 30,
-          "changes": 18518
-        },
-        "spreading": {
-          "positions": 66157,
-          "openInt": 15.9,
-          "traders": 30,
-          "changes": -5249
+          "positions": 14098,
+          "openInt": 3.4,
+          "changes": 9059
         }
       }
     ]
   },
   {
     "name": "\"2 YEAR ERIS SWAP - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 151991,
     "totalChange": 648,
-    "totalTraders": 21,
     "contracts": "\"100,000 USD notional principal\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 13735,
           "openInt": 9,
-          "traders": ".",
           "changes": 0
         },
         "short": {
           "positions": 32053,
           "openInt": 21.1,
-          "traders": ".",
           "changes": 40
-        },
-        "spreading": {
-          "positions": 3908,
-          "openInt": 2.6,
-          "traders": ".",
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "short": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 49776,
-          "openInt": 32.7,
-          "traders": ".",
-          "changes": 188
+          "positions": 0,
+          "openInt": 0,
+          "changes": 0
         },
         "short": {
-          "positions": 54412,
-          "openInt": 35.8,
-          "traders": 4,
-          "changes": -932
-        },
-        "spreading": {
-          "positions": 39933,
-          "openInt": 26.3,
-          "traders": ".",
-          "changes": 460
+          "positions": 0,
+          "openInt": 0,
+          "changes": 0
         }
       }
     ]
   },
   {
     "name": "\"BITCOIN - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 10841,
     "totalChange": 790,
-    "totalTraders": 85,
     "contracts": "\"(5 Bitcoins)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 283,
           "openInt": 2.6,
-          "traders": 4,
           "changes": -70
         },
         "short": {
           "positions": 802,
           "openInt": 7.4,
-          "traders": ".",
           "changes": 80
-        },
-        "spreading": {
-          "positions": 82,
-          "openInt": 0.8,
-          "traders": ".",
-          "changes": -56
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 5735,
-          "openInt": 52.9,
-          "traders": 5,
-          "changes": -96
-        },
-        "short": {
-          "positions": 888,
-          "openInt": 8.2,
-          "traders": 7,
-          "changes": 230
-        },
-        "spreading": {
-          "positions": 19,
-          "openInt": 0.2,
-          "traders": ".",
-          "changes": 19
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 1863,
-          "openInt": 17.2,
-          "traders": 17,
-          "changes": 367
+          "positions": 5735,
+          "openInt": 52.9,
+          "changes": -96
         },
         "short": {
-          "positions": 7192,
-          "openInt": 66.3,
-          "traders": 39,
-          "changes": 358
-        },
-        "spreading": {
-          "positions": 537,
-          "openInt": 5,
-          "traders": 15,
-          "changes": 39
+          "positions": 888,
+          "openInt": 8.2,
+          "changes": 230
         }
       }
     ]
   },
   {
     "name": "\"MICRO BITCOIN - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 17355,
     "totalChange": 6441,
-    "totalTraders": 116,
     "contracts": "\"(Bitcoin X $0.10)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 2222,
           "openInt": 12.8,
-          "traders": 5,
           "changes": 863
         },
         "short": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 315,
-          "openInt": 1.8,
-          "traders": 4,
-          "changes": 26
-        },
-        "short": {
-          "positions": 373,
-          "openInt": 2.1,
-          "traders": ".",
-          "changes": 50
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
           "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 4871,
-          "openInt": 28.1,
-          "traders": 10,
-          "changes": 3148
+          "positions": 315,
+          "openInt": 1.8,
+          "changes": 26
         },
         "short": {
-          "positions": 11462,
-          "openInt": 66,
-          "traders": 16,
-          "changes": 5294
-        },
-        "spreading": {
-          "positions": 535,
-          "openInt": 3.1,
-          "traders": 4,
-          "changes": 247
+          "positions": 373,
+          "openInt": 2.1,
+          "changes": 50
         }
       }
     ]
   },
   {
     "name": "\"ETHER CASH SETTLED - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 3443,
     "totalChange": 462,
-    "totalTraders": 46,
     "contracts": "\"(50 Index Points)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 128,
           "openInt": 3.7,
-          "traders": ".",
           "changes": 25
         },
         "short": {
           "positions": 175,
           "openInt": 5.1,
-          "traders": ".",
           "changes": 89
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": -45
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "short": {
-          "positions": 249,
-          "openInt": 7.2,
-          "traders": ".",
-          "changes": 121
-        },
-        "spreading": {
-          "positions": 3,
-          "openInt": 0.1,
-          "traders": ".",
-          "changes": -15
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 857,
-          "openInt": 24.9,
-          "traders": 10,
-          "changes": -31
+          "positions": 0,
+          "openInt": 0,
+          "changes": 0
         },
         "short": {
-          "positions": 2366,
-          "openInt": 68.7,
-          "traders": 21,
-          "changes": 205
-        },
-        "spreading": {
-          "positions": 119,
-          "openInt": 3.5,
-          "traders": 4,
-          "changes": 37
+          "positions": 249,
+          "openInt": 7.2,
+          "changes": 121
         }
       }
     ]
   },
   {
     "name": "\"MICRO ETHER  - CHICAGO MERCANTILE EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 44843,
     "totalChange": 6390,
-    "totalTraders": 110,
     "contracts": "\"(0.1 Index Points)\"",
     "metrics": [
-      {
-        "name": "Dealer Intermediary",
-        "long": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "short": {
-          "positions": 8717,
-          "openInt": 19.4,
-          "traders": ".",
-          "changes": -489
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
       {
         "name": "Asset Manager/Institutional",
         "long": {
           "positions": 0,
           "openInt": 0,
-          "traders": 0,
           "changes": 0
         },
         "short": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
+          "positions": 8717,
+          "openInt": 19.4,
+          "changes": -489
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 33310,
-          "openInt": 74.3,
-          "traders": 4,
-          "changes": 5187
+          "positions": 0,
+          "openInt": 0,
+          "changes": 0
         },
         "short": {
-          "positions": 27936,
-          "openInt": 62.3,
-          "traders": 12,
-          "changes": 5284
-        },
-        "spreading": {
-          "positions": 83,
-          "openInt": 0.2,
-          "traders": ".",
-          "changes": 75
+          "positions": 0,
+          "openInt": 0,
+          "changes": 0
         }
       }
     ]
   },
   {
     "name": "\"USD INDEX - ICE FUTURES U.S.\"",
+    "date": "2022-05-10",
     "openInterest": 57556,
     "totalChange": 3464,
-    "totalTraders": 130,
     "contracts": "\"(U.S. DOLLAR INDEX X $1000)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 551,
           "openInt": 1,
-          "traders": ".",
           "changes": -110
         },
         "short": {
           "positions": 27942,
           "openInt": 48.5,
-          "traders": ".",
           "changes": 398
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
-          "changes": 0
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 28445,
-          "openInt": 49.4,
-          "traders": 23,
-          "changes": 2512
-        },
-        "short": {
-          "positions": 550,
-          "openInt": 1,
-          "traders": ".",
-          "changes": -135
-        },
-        "spreading": {
-          "positions": 510,
-          "openInt": 0.9,
-          "traders": 5,
-          "changes": 25
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 16312,
-          "openInt": 28.3,
-          "traders": 42,
-          "changes": 662
+          "positions": 28445,
+          "openInt": 49.4,
+          "changes": 2512
         },
         "short": {
-          "positions": 23476,
-          "openInt": 40.8,
-          "traders": 17,
-          "changes": 3403
-        },
-        "spreading": {
-          "positions": 321,
-          "openInt": 0.6,
-          "traders": 5,
-          "changes": -176
+          "positions": 550,
+          "openInt": 1,
+          "changes": -135
         }
       }
     ]
   },
   {
     "name": "\"VIX FUTURES - CBOE FUTURES EXCHANGE\"",
+    "date": "2022-05-10",
     "openInterest": 318283,
     "totalChange": -2229,
-    "totalTraders": 166,
     "contracts": "\"($1000 X INDEX)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 39605,
           "openInt": 12.4,
-          "traders": 12,
           "changes": 3846
         },
         "short": {
           "positions": 29010,
           "openInt": 9.1,
-          "traders": 18,
           "changes": 5687
-        },
-        "spreading": {
-          "positions": 15779,
-          "openInt": 5,
-          "traders": 19,
-          "changes": -2910
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 84320,
-          "openInt": 26.5,
-          "traders": 22,
-          "changes": -6206
-        },
-        "short": {
-          "positions": 27390,
-          "openInt": 8.6,
-          "traders": 22,
-          "changes": -9439
-        },
-        "spreading": {
-          "positions": 37141,
-          "openInt": 11.7,
-          "traders": 23,
-          "changes": 4414
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 39869,
-          "openInt": 12.5,
-          "traders": 25,
-          "changes": 5620
+          "positions": 84320,
+          "openInt": 26.5,
+          "changes": -6206
         },
         "short": {
-          "positions": 101669,
-          "openInt": 31.9,
-          "traders": 40,
-          "changes": 1924
-        },
-        "spreading": {
-          "positions": 60550,
-          "openInt": 19,
-          "traders": 39,
-          "changes": -4667
+          "positions": 27390,
+          "openInt": 8.6,
+          "changes": -9439
         }
       }
     ]
   },
   {
     "name": "\"BBG COMMODITY - CHICAGO BOARD OF TRADE\"",
+    "date": "2022-05-10",
     "openInterest": 34464,
     "totalChange": -676,
-    "totalTraders": 45,
     "contracts": "\"($100 X INDEX)\"",
     "metrics": [
       {
-        "name": "Dealer Intermediary",
+        "name": "Asset Manager/Institutional",
         "long": {
           "positions": 1136,
           "openInt": 3.3,
-          "traders": ".",
           "changes": 0
         },
         "short": {
           "positions": 20378,
           "openInt": 59.1,
-          "traders": ".",
           "changes": 2994
-        },
-        "spreading": {
-          "positions": 64,
-          "openInt": 0.2,
-          "traders": ".",
-          "changes": -31
-        }
-      },
-      {
-        "name": "Asset Manager/Institutional",
-        "long": {
-          "positions": 27188,
-          "openInt": 78.9,
-          "traders": 15,
-          "changes": -448
-        },
-        "short": {
-          "positions": 1016,
-          "openInt": 2.9,
-          "traders": ".",
-          "changes": 0
-        },
-        "spreading": {
-          "positions": 1165,
-          "openInt": 3.4,
-          "traders": ".",
-          "changes": 0
         }
       },
       {
         "name": "Leveraged Funds",
         "long": {
-          "positions": 920,
-          "openInt": 2.7,
-          "traders": 5,
-          "changes": -113
+          "positions": 27188,
+          "openInt": 78.9,
+          "changes": -448
         },
         "short": {
-          "positions": 11439,
-          "openInt": 33.2,
-          "traders": 7,
-          "changes": -1021
-        },
-        "spreading": {
-          "positions": 0,
-          "openInt": 0,
-          "traders": 0,
+          "positions": 1016,
+          "openInt": 2.9,
           "changes": 0
         }
       }
