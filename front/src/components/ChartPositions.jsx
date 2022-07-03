@@ -41,6 +41,7 @@ const getData = (currency) => {
     assetManager.long.positions + leveragedFunds.long.positions,
     assetManager.short.positions + leveragedFunds.short.positions
   ]
+
   return {
     labels,
     datasets: [
@@ -55,7 +56,7 @@ const getData = (currency) => {
         backgroundColor: '',
       },
       {
-        label: 'Non-ComerciaL',
+        label: 'Non-Comercial',
         data: nonComercialData,
         backgroundColor: '',
       }
@@ -64,20 +65,15 @@ const getData = (currency) => {
 }
 
 
-export function ChartPositions(props) {
-  const [data, setData] = useState({})
+export function ChartPositions({ currency, bgColors, setCurrencyIndex, setLabelIndex }) {
 
-  useEffect(() => {
-    const firstData = getData(props.currency)
-    //data.datasets[0].backgroundColor = props?.testdata;
-
-    for (let i = 0; i < firstData.datasets.length; i++) {
-      firstData.datasets[i].backgroundColor = props.bgColors[i];
+  const changeBackgroundColor = (barData) => {
+    for (let i = 0; i < barData.datasets.length; i++) {
+      barData.datasets[i].backgroundColor = bgColors[i];
     };
+    return barData;
+  }
 
-    setData(firstData)
-  }, [])
-  
 
   const options = {
     plugins: {
@@ -100,36 +96,11 @@ export function ChartPositions(props) {
     const currencyIndex = clickedElements[0].index;
     const labelIndex = clickedElements[0].datasetIndex;
 
-    props.setCurrencyIndex(currencyIndex);
-    props.setLabelIndex(labelIndex);
+    setCurrencyIndex(currencyIndex);
+    setLabelIndex(labelIndex);
   }
 
-  if(!isFirstBoot){
-    if( !(props.bgColors.length <= 1) ) {
-      for (let i = 0; i < data.datasets.length; i++) {
-        data.datasets[i].backgroundColor = props.bgColors[i];
-      };
-    }
-  }else{
-    let tempColors = [];
-    for (let i = 0; i < data.datasets.length; i++) {
-        tempColors[i] = data.datasets[i].backgroundColor;
-    };
-    props.setBgColors(tempColors);
-    setBoot(false);
-  }
-
-  function handleDropDownChange(event){
-    const selectedCurrency = event.target.value;
-    const trueCurrency = currencies.find( (curren,index) => {
-      return curren.name.toLowerCase().includes(selectedCurrency);
-    });
-    setcurrency(trueCurrency);
-  }
-
-  return (  
-    <>
-      <Bar options={options} data={data} />
-    </>
-  ): 'loading';
+  return (
+    <Bar options={options} data={changeBackgroundColor(getData(currency))} />
+  )
 };

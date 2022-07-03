@@ -5,12 +5,13 @@ import { ColorPicker, useColor } from "react-color-palette";
 import currencies from "../../files/2022-05-10.json";
 import "react-color-palette/lib/css/styles.css";
 import { useState } from 'react';
-import { CURRENCIES } from './constants';
+import CurrencySelect from './components/CurrencySelect';
+import { Button } from 'antd';
 
 const Layout = ({ nightMode, children }) => {
   return nightMode ? (
     <div className='dayTheme'>
-        {children}
+      {children}
     </div>
   ) : (
     <div className='nightTheme'>
@@ -19,36 +20,15 @@ const Layout = ({ nightMode, children }) => {
   )
 }
 
-const Navbar = ({theme, setTheme, currency, setCurrency}) => {
+const Navbar = ({ theme, setTheme, setCurrency }) => {
   const switchTheme = (theme) => {
     setTheme(!theme)
   }
 
-  const handleDropDownChange = (event) =>{
-    const selectedCurrency = event.target.value;
-    const foundCurrency = currencies.find( (current) => {
-      return current.name.includes(selectedCurrency);
-    });
-    setcurrency(foundCurrency);
-  }
-
   return (
     <div id="navbar" >
-      <span>
-        <h1 style={{margin:"0px"}}>hi</h1>
-      </span>
-      <span>
-        <button onClick={() => switchTheme(theme)} >{theme ? "Night Mode" : "Day Mode"}</button>
-      </span>
-      <span>
-      <select name="currencies" id="currencies" onChange={handleDropDownChange}>
-          {CURRENCIES.map ((data,index) => {
-            return(
-              <option key={index} value={data.name}>{data.display}</option>
-            );
-          })}
-        </select>
-      </span>
+      <Button onClick={() => switchTheme(theme)} >{theme ? "Night Mode" : "Day Mode"}</Button>
+      <CurrencySelect setCurrency={setCurrency} currenciesInfo={currencies} />
     </div>
   )
 }
@@ -78,40 +58,31 @@ const App = () => {
     setLabelIndex(undefined);
   }
 
-
-
   return (
     <Layout nightMode={theme} >
       <Navbar theme={theme} setTheme={setTheme} currency={currency} setCurrency={setCurrency} />
       <div className="App">
         <div id='leftSide'>
-          
           {
-            (labelIndex !== undefined )?
-            <>
-              
-              <h1 className='gridChild'>Color Picker</h1>
-              <ColorPicker width={456} height={228} color={color} onChange={setColor} hideHSV alpha={true} dark />
-              <button onClick={saveColor}>save</button>
-            </>
-            :
-            <TradingsterTable currency={currency} />
+            (labelIndex !== undefined) ?
+              <>
+
+                <h1 className='gridChild'>Color Picker</h1>
+                <ColorPicker width={456} height={228} color={color} onChange={setColor} hideHSV alpha={true} dark />
+                <button onClick={saveColor}>save</button>
+              </>
+              :
+              <TradingsterTable currency={currency} />
           }
         </div>
-        {/* <div className='grid'>
+        <div className='grid'>
           <div></div>
           <div id='rightSide'>
-            <div id='barChart' style={{height:"95vh"}}>
+            <div id='barChart' style={{ height: "80vh" }}>
               <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} currency={currency} />
-            </div>
-            <div id='barChart' style={{height:"100vh"}}>
-              <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} currency={currency} />
-            </div>
-            <div id='barChart' style={{height:"100vh"}}>
-              <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} currency={currency}/>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </Layout>
   )

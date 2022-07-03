@@ -57,7 +57,7 @@ button {
   background-color:white;
   color: black;
 }
-.nightTheme *{
+.nightTheme{
   background-color: #282c34;
   color: white;
 }
@@ -72,10 +72,9 @@ button {
   position: fixed;
 }
 #navbar{
-  
   padding-top: 0.5%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   border: 2px gray solid;
 }
 #navbar span{
