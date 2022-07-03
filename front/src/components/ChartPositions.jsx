@@ -15,8 +15,8 @@ import currencies from "../../../files/2022-05-10.json";
 
 import { useState } from 'react';
 import { CURRENCIES } from '../CURRENCIES';
-
-
+import { getChartData } from '../CHARTDATA';
+const data = getChartData();
 
 ChartJS.register(
   CategoryScale,
@@ -29,42 +29,9 @@ ChartJS.register(
   Legend,
 );
 
-//const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];  
-const labels = ["long", "short"]
-
-const assetManager = currencies[0].metrics[0]
-const leveragedFunds = currencies[0].metrics[1]
-
-const assetManagerData = [assetManager.long.positions, assetManager.short.positions]
-const leveragedFundsData = [leveragedFunds.long.positions, leveragedFunds.short.positions]
-const nonComercialData = [
-  assetManager.long.positions + leveragedFunds.long.positions,
-  assetManager.short.positions + leveragedFunds.short.positions
-]
-export const data = {
-  labels,
-  datasets: [
-    {
-      label: 'Asset Manager',
-      data: assetManagerData,
-      backgroundColor: '',
-    },
-    {
-      label: 'Leveraged Funds',
-      data: leveragedFundsData,
-      backgroundColor: '',
-    },
-    {
-      label: 'Non-ComerciaL',
-      data: nonComercialData,
-      backgroundColor: '',
-    }
-  ],
-};
-
-
 export function ChartPositions(props) {
   const [currency, setcurrency] = useState(currencies[0]);
+  const [isFirstBoot, setBoot] = useState(true);
 
   const options = {
     plugins: {
@@ -81,7 +48,6 @@ export function ChartPositions(props) {
     maintainAspectRatio: false,
   };
 
-
   function barClickHandler(event, clickedElements) {
     if (clickedElements.length === 0) return
 
@@ -92,10 +58,21 @@ export function ChartPositions(props) {
     props.setLabelIndex(labelIndex);
   }
 
-  //data.datasets[0].backgroundColor = props?.testdata;
-  for (let i = 0; i < data.datasets.length; i++) {
-    data.datasets[i].backgroundColor = props.bgColors[i];
-  };
+  if(!isFirstBoot){
+    if( !(props.bgColors.length <= 1) ) {
+      for (let i = 0; i < data.datasets.length; i++) {
+        data.datasets[i].backgroundColor = props.bgColors[i];
+      };
+    }
+  }else{
+    let tempColors = [];
+    for (let i = 0; i < data.datasets.length; i++) {
+        tempColors[i] = data.datasets[i].backgroundColor;
+    };
+    console.log(tempColors);
+    props.setBgColors(tempColors);
+    setBoot(false);
+  }
 
   function handleDropDownChange(event){
     const selectedCurrency = event.target.value;
