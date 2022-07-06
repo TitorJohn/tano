@@ -15,7 +15,7 @@ import currencies from "../../../files/2022-05-10.json";
 
 import { useState } from 'react';
 import { CURRENCIES } from '../CURRENCIES';
-import { getChartData } from '../chartData';
+import { getChartData } from '../getChartData';
 const data = getChartData();
 
 ChartJS.register(
@@ -69,7 +69,6 @@ export function ChartPositions(props) {
     for (let i = 0; i < data.datasets.length; i++) {
         tempColors[i] = data.datasets[i].backgroundColor;
     };
-    console.log(tempColors);
     props.setBgColors(tempColors);
     setBoot(false);
   }

@@ -3,8 +3,8 @@ export function getChartData(){
     let colors = ['rgba(53, 162, 235, 0.5)', 'rgba(53, 162, 235, 0.5)', 'rgba(53, 162, 235, 0.5)'];
     const labels = ["long", "short"]
 
-    const assetManager = currencies[0].metrics[1]
-    const leveragedFunds = currencies[0].metrics[2]
+    const assetManager = currencies[0].metrics[0]
+    const leveragedFunds = currencies[0].metrics[1]
 
     const assetManagerData = [assetManager.long.positions, assetManager.short.positions]
     const leveragedFundsData = [leveragedFunds.long.positions, leveragedFunds.short.positions]
@@ -13,9 +13,14 @@ export function getChartData(){
         assetManager.short.positions + leveragedFunds.short.positions
     ]
 
+    const colorsLocalStorage = localStorage.getItem('colors');
+    if(colorsLocalStorage) colors = JSON.parse(colorsLocalStorage);
+    
+    /*
     if(localStorage.getItem('colors') !== null){
         colors = JSON.parse(localStorage.getItem('colors'));
     }
+    */
 
     return {
         labels,
