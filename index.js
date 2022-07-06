@@ -2,7 +2,7 @@ const getCurrencies = require("./src/currencies");
 
 const main = async () => {
     const date = process.argv[2];
-    if (process.argv.length < 3 | date.length <= 4) {
+    if (process.argv.length < 3 || !date || date.length <= 4) {
         console.error("give me a date with month and day");
         process.exit(1)
     }

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cli": "node src/cli.js",
+    "files": "node index.js 2022-01-02",
     "start:front": "cd front && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

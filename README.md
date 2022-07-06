@@ -1,8 +1,9 @@
 # tano
-tano reports
+Tano reports
 
-Files:
-Run node index.js to fetch all weekly reports of a year and never push the folder itself
+## First
+To get the files
+run yarn files (node index.js 2022-01-02) to fetch all weekly reports of a year and never push the folder itself
 
 Reportes:
 https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm
