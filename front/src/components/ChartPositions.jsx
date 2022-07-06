@@ -15,7 +15,7 @@ import currencies from "../../../files/2022-05-10.json";
 
 import { useState } from 'react';
 import { CURRENCIES } from '../CURRENCIES';
-import { getChartData } from '../CHARTDATA';
+import { getChartData } from '../chartData';
 const data = getChartData();
 
 ChartJS.register(
