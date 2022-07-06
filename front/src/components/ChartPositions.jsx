@@ -11,7 +11,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import currencies from '../../../files/2022-05-10.json'
+import currencies from "../../../files/2022-05-10.json";
 
 import { useState } from 'react';
 import { CURRENCIES } from '../CURRENCIES';
@@ -32,9 +32,8 @@ ChartJS.register(
 //const labels = [currencies[0].name.replace(' - CHICAGO MERCANTILE EXCHANGE', ''), currencies[1].name.replace(' - CHICAGO MERCANTILE EXCHANGE', '')];  
 const labels = ["long", "short"]
 
-const assetManager = currencies[0].metrics[1]
-const leveragedFunds = currencies[0].metrics[2]
-console.log(currencies);
+const assetManager = currencies[0].metrics[0]
+const leveragedFunds = currencies[0].metrics[1]
 
 const assetManagerData = [assetManager.long.positions, assetManager.short.positions]
 const leveragedFundsData = [leveragedFunds.long.positions, leveragedFunds.short.positions]

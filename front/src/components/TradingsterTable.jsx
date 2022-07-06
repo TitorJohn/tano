@@ -13,10 +13,10 @@ export const TradingsterTable = ({currency}) => {
                 short: [],
             },
         }
-        data.assetManager.long = Object.values(currency.metrics[1].long)
-        data.assetManager.short = Object.values(currency.metrics[1].short)
-        data.leveragedFunds.long = Object.values(currency.metrics[2].long)
-        data.leveragedFunds.short = Object.values(currency.metrics[2].short)
+        data.assetManager.long = Object.values(currency.metrics[0].long)
+        data.assetManager.short = Object.values(currency.metrics[0].short)
+        data.leveragedFunds.long = Object.values(currency.metrics[1].long)
+        data.leveragedFunds.short = Object.values(currency.metrics[1].short)
 
         for (const [i, v] of data.assetManager.long.entries()) {
             const long = data.leveragedFunds.long[i] + v

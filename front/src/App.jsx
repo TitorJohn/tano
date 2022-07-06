@@ -2,7 +2,7 @@ import './App.css'
 import { ChartPositions } from './components/ChartPositions'
 import { TradingsterTable } from './components/TradingsterTable';
 import { ColorPicker, useColor } from "react-color-palette";
-import currencies from '../../files/2022-05-10.json'
+import currencies from "../../files/2022-05-10.json";
 import "react-color-palette/lib/css/styles.css";
 import { useState } from 'react';
 
