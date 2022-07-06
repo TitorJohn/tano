@@ -1,6 +1,9 @@
 # tano
 tano reports
 
+Files:
+Run node index.js to fetch all weekly reports of a year and never push the folder itself
+
 Reportes:
 https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm
 historico:
