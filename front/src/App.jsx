@@ -43,7 +43,7 @@ const App = () => {
   const [currencyIndex, setCurrencyIndex] = useState(undefined);
   const [theme, setTheme] = useState(false)
   const [labelIndex, setLabelIndex] = useState(undefined);
-  const [bgColors, setBgColors] = useState(["rgba(53, 162, 235, 0.5)", 'rgba(53, 162, 235, 0.5)', 'rgba(53, 162, 235, 0.5)']);
+  const [bgColors, setBgColors] = useState("");
 
   const saveColor = () => {
     let temporal = [...bgColors];
@@ -58,6 +58,7 @@ const App = () => {
     temporal[labelIndex] = ("rgba(" + color.rgb.r + "," + color.rgb.g + "," + color.rgb.b + "," + alpha + ")");
 
     setBgColors(temporal);
+    localStorage.setItem("colors", JSON.stringify(temporal));
     setLabelIndex(undefined);
   }
 
@@ -85,13 +86,13 @@ const App = () => {
           <div></div>
           <div id='rightSide'>
             <div id='barChart' style={{height:"95vh"}}>
-              <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
+              <ChartPositions key={bgColors?.toString()} bgColors={bgColors} setBgColors={setBgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
             </div>
             <div id='barChart' style={{height:"100vh"}}>
-              <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
+              <ChartPositions key={bgColors?.toString()} bgColors={bgColors} setBgColors={setBgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
             </div>
             <div id='barChart' style={{height:"100vh"}}>
-              <ChartPositions key={bgColors.toString()} bgColors={bgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
+              <ChartPositions key={bgColors?.toString()} bgColors={bgColors} setBgColors={setBgColors} setCurrencyIndex={setCurrencyIndex} setLabelIndex={setLabelIndex} />
             </div>
           </div>
         </div>
