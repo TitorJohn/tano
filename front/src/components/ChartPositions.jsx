@@ -12,9 +12,6 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 
-import { useState } from 'react';
-import { useEffect } from 'react';
-
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -32,8 +29,8 @@ ChartJS.register(
 const getData = (currency) => {
   const labels = ["long", "short"]
 
-  const assetManager = currency.metrics[1]
-  const leveragedFunds = currency.metrics[2]
+  const assetManager = currency.metrics[0]
+  const leveragedFunds = currency.metrics[1]
 
   const assetManagerData = [assetManager.long.positions, assetManager.short.positions]
   const leveragedFundsData = [leveragedFunds.long.positions, leveragedFunds.short.positions]
