@@ -19,9 +19,9 @@ export const TradingsterTable = ({currency}) => {
 
         for (const [i, v] of data.assetManager.long.entries()) {
             const long = data.leveragedFunds.long[i] + v
-            data.nonComercial.long.push(long)
+            data.nonComercial.long.push(long.toFixed(2))
             const short = data.leveragedFunds.short[i] + data.assetManager.short[i]
-            data.nonComercial.short.push(short)
+            data.nonComercial.short.push(short.toFixed(2))
         }
 
         setData(data)
@@ -39,50 +39,54 @@ export const TradingsterTable = ({currency}) => {
                     <th></th>
                     <th>Positions</th>
                     <th>Open Int</th>
-                    <th>Traders</th>
-                    <th className="tableDivision">Change</th>
+                    <th className="tableDivision"></th>
                     <th>Positions</th>
                     <th>Open Int</th>
-                    <th>Traders</th>
-                    <th>Change</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td><strong>Asset Manager/<br/>Institutional</strong></td>
-                    {data.assetManager.long.map((value,index) => {
-                        if(index === data.assetManager.long.length - 1){
-                            return <td key={index} className="tableDivision">{value}</td>
-                        }
-                        return <td key={index}>{value}</td>
-                    })}
-                    {data.assetManager.short.map((value,index) => {
-                        return <td key={index}>{value}</td> 
-                    })}
+                    <td>{data.assetManager.long[0]}
+                    <br></br>
+                    <span>{data.assetManager.long[2]}</span>
+                    </td>
+                    <td>{data.assetManager.long[1]}</td>
+                    <td className="tableDivision"></td>
+                    <td>{data.assetManager.short[0]}
+                    <br></br>
+                    <span>{data.assetManager.short[2]}</span>
+                    </td>
+                    <td>{data.assetManager.short[1]}</td>
                 </tr>
                 <tr>
                     <td><strong>Leveraged<br/>Funds</strong></td>
-                    {data.leveragedFunds.long.map((value,index) => {
-                        if(index === data.leveragedFunds.long.length - 1){
-                            return <td key={index} className="tableDivision">{value}</td>
-                        }
-                        return <td key={index}>{value}</td>
-                    })}
-                    {data.leveragedFunds.short.map((value,index) => {
-                        return <td key={index}>{value}</td> 
-                    })}
+                    <td>{data.leveragedFunds.long[0]}
+                    <br></br>
+                    <span>{data.leveragedFunds.long[2]}</span>
+                    </td>
+                    <td>{data.leveragedFunds.long[1]}</td>
+                    <td className="tableDivision"></td>
+                    <td>{data.leveragedFunds.short[0]}
+                    <br></br>
+                    <span>{data.leveragedFunds.short[2]}</span>
+                    </td>
+                    <td>{data.leveragedFunds.short[1]}</td>
                 </tr>
                 <tr>
                     <td><strong>Non<br/>Comercial</strong></td>
-                    {data.nonComercial.long.map((value,index) => {
-                        if(index === data.nonComercial.long.length - 1){
-                            return <td key={index} className="tableDivision">{value}</td>
-                        }
-                        return <td key={index}>{value}</td>
-                    })}
-                    {data.nonComercial.short.map((value,index) => {
-                        return <td key={index}>{value}</td> 
-                    })}
+                    <td>{data.nonComercial.long[0]}
+                    <br></br>
+                    <span>{data.nonComercial.long[2]}</span>
+                    </td>
+                    <td>{data.nonComercial.long[1]}</td>
+                    <td className="tableDivision"></td>
+                    <td>{data.nonComercial.short[0]}
+                    <br></br>
+                    <span>{data.nonComercial.short[2]}</span>
+                    </td>
+                    <td>{data.nonComercial.short[1]}</td>
                 </tr>
             </tbody>
         </table>
