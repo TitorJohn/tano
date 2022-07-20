@@ -1,94 +1,119 @@
-import { useEffect, useState } from "react"
+import { Table, Typography } from "antd"
+import {
+	ArrowDownOutlined,
+	ArrowUpOutlined,
+} from '@ant-design/icons';
 
-export const TradingsterTable = ({currency}) => {
-    const [data, setData ] = useState()
 
-    useEffect(() => {
-        const data = {
-            assetManager: {},
-            leveragedFunds: {},
-            nonComercial: {
-                long: [],
-                short: [],
-            },
-        }
-        data.assetManager.long = Object.values(currency.metrics[0].long)
-        data.assetManager.short = Object.values(currency.metrics[0].short)
-        data.leveragedFunds.long = Object.values(currency.metrics[1].long)
-        data.leveragedFunds.short = Object.values(currency.metrics[1].short)
+const { Text } = Typography;
 
-        for (const [i, v] of data.assetManager.long.entries()) {
-            const long = data.leveragedFunds.long[i] + v
-            data.nonComercial.long.push(long.toFixed(2))
-            const short = data.leveragedFunds.short[i] + data.assetManager.short[i]
-            data.nonComercial.short.push(short.toFixed(2))
-        }
+export const TradingsterTable = ({ currency }) => {
+	const getNonComercialData = (assetManager, leveragedFunds) => {
+		return {
+			name: "Non-comercial",
+			long: {
+				positions: (assetManager.long.positions + leveragedFunds.long.positions).toFixed(2),
+				openInt: (assetManager.long.openInt + leveragedFunds.long.openInt).toFixed(2),
+			},
+			short: {
+				positions: (assetManager.short.positions + leveragedFunds.short.positions).toFixed(2),
+				openInt: (assetManager.short.openInt + leveragedFunds.short.openInt).toFixed(2),
+			}
+		}
 
-        setData(data)
-    }, [currency.name])
+	}
+	const getDataSource = (currency) => {
+		const metrics = [...currency.metrics, (getNonComercialData(currency.metrics[0], currency.metrics[1]))];
+		return metrics.map(metric => {
+			return {
+				name: metric.name,
+				...getDataPerType(metric.long, 'long'),
+				...getDataPerType(metric.short, 'short'),
+			}
+		})
+	}
 
-    return data && (
-        <table className="table table-striped">
-            <thead>
-                <tr>
-                    <th>&nbsp;</th>
-                    <th colSpan="3" >Long</th>
-                    <th colSpan="3" >Short</th>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th>Positions</th>
-                    <th>Open Int</th>
-                    <th className="tableDivision"></th>
-                    <th>Positions</th>
-                    <th>Open Int</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Asset Manager/<br/>Institutional</strong></td>
-                    <td>{data.assetManager.long[0]}
-                    <br></br>
-                    <span>{data.assetManager.long[2]}</span>
-                    </td>
-                    <td>{data.assetManager.long[1]}</td>
-                    <td className="tableDivision"></td>
-                    <td>{data.assetManager.short[0]}
-                    <br></br>
-                    <span>{data.assetManager.short[2]}</span>
-                    </td>
-                    <td>{data.assetManager.short[1]}</td>
-                </tr>
-                <tr>
-                    <td><strong>Leveraged<br/>Funds</strong></td>
-                    <td>{data.leveragedFunds.long[0]}
-                    <br></br>
-                    <span>{data.leveragedFunds.long[2]}</span>
-                    </td>
-                    <td>{data.leveragedFunds.long[1]}</td>
-                    <td className="tableDivision"></td>
-                    <td>{data.leveragedFunds.short[0]}
-                    <br></br>
-                    <span>{data.leveragedFunds.short[2]}</span>
-                    </td>
-                    <td>{data.leveragedFunds.short[1]}</td>
-                </tr>
-                <tr>
-                    <td><strong>Non<br/>Comercial</strong></td>
-                    <td>{data.nonComercial.long[0]}
-                    <br></br>
-                    <span>{data.nonComercial.long[2]}</span>
-                    </td>
-                    <td>{data.nonComercial.long[1]}</td>
-                    <td className="tableDivision"></td>
-                    <td>{data.nonComercial.short[0]}
-                    <br></br>
-                    <span>{data.nonComercial.short[2]}</span>
-                    </td>
-                    <td>{data.nonComercial.short[1]}</td>
-                </tr>
-            </tbody>
-        </table>
-    )
+	const getDataPerType = (data, type) => {
+		const obj = {}
+		Object.entries(data).forEach(([key, value]) => obj[`${type}-${key}`] = value)
+		return obj;
+	}
+
+	const columns = [
+		{
+			title: 'Metric',
+			dataIndex: 'name',
+			key: 'name',
+			width: 100,
+			fixed: 'left',
+		},
+		{
+			title: 'Long',
+			dataIndex: 'long',
+			key: 'long',
+			children: [
+				{
+					title: 'Positions',
+					dataIndex: 'long-positions',
+					key: 'long-positions',
+					width: 150,
+					render: (text, record) => {
+						const changes = record['long-changes'];
+						return (
+							<>
+								{text} {' '}
+								{changes &&
+									<>
+										<Text type={changes > 0 ? 'success' : 'danger'}>{changes > 0 ? <ArrowUpOutlined /> : <ArrowDownOutlined />} {changes}</Text>
+									</>
+								}
+							</>
+						)
+					}
+				},
+				{
+					title: 'Open Int',
+					dataIndex: 'long-openInt',
+					key: 'long-openInt',
+					width: 150,
+				},
+			],
+		},
+		{
+			title: 'Short',
+			dataIndex: 'short',
+			key: 'short',
+			children: [
+				{
+					title: 'Positions',
+					dataIndex: 'short-positions',
+					key: 'short-positions',
+					width: 150,
+					render: (text, record) => {
+						const changes = record['short-changes'];
+						return (
+							<>
+								{text} {' '}
+								{changes &&
+									<>
+										<Text type={changes > 0 ? 'success' : 'danger'}>{changes > 0 ? <ArrowUpOutlined /> : <ArrowDownOutlined />} {changes}</Text>
+									</>
+								}
+							</>
+						)
+					}
+				},
+				{
+					title: 'Open Int',
+					dataIndex: 'short-openInt',
+					key: 'short-openInt',
+					width: 150,
+				},
+			],
+		},
+	];
+
+	return (
+		<Table dataSource={getDataSource(currency)} pagination={false} columns={columns} />
+	)
 }
